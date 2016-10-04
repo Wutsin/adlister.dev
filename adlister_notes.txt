@@ -1,0 +1,51 @@
+database/ 
+    db_connect.php
+    migration/
+        user_migration.php
+    seeder/
+        user_seeder.php
+
+models/ 
+    Ad.php
+    Model.php
+    User.php
+
+public/ 
+    index.php //marketing homepage
+    css/
+        main.css //site styles
+    img/ 
+        logo.png
+    js/
+        main.js //site javascript
+    ads.create.php //ad creation form
+    ads.edit.php //ad editing form
+    ads.index.php //listing of all ads
+    ads.show.php //view of individual ad
+    auth.login.php //login form
+    auth.logout.php //logout action
+    ￼users.create.php //user signup
+    users.edit.php //user editing form
+    users.show.php //user profile
+
+utils/ 
+    Auth.php
+    Input.php 
+    Logger.php
+    helper_functions.php //function for file uploads
+
+views/ 
+    partials/
+        header.php 
+        footer.php 
+        navbar.php
+
+controllers/
+    PageController.php 
+
+bootstrap.php //site initialization
+env.template.php //sensitive site configuration env template
+
+README.md //exercise instructions
+wireframes.pdf //exercise instructions, template for views
+mvc-diagram.png //exercise instructions

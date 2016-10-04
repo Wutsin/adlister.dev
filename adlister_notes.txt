@@ -15,7 +15,8 @@ git branch -d <branch-name>
     => delete a branch
 git merge <branch-name>
     => merge a branch into the current branch
-
+git push origin <branch-name>
+    => pushes branch
 
 
 

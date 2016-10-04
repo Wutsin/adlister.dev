@@ -1,5 +1,29 @@
 -----------------------------------------------------------------
 -----------------------------------------------------------------
+GIT INFO
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+git branch
+    => see what branch you're on and view the branches you have on your machine
+git branch <branch-name>
+    => create a new branch
+git checkout <branch-name>
+    => switch to a different branch
+git checkout -b <branch-name>
+    => create and switch to a new branch
+git branch -d <branch-name>
+    => delete a branch
+git merge <branch-name>
+    => merge a branch into the current branch
+git push origin <branch-name>
+    => pushes branch
+
+
+
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 FILE STRUCTURE
 -----------------------------------------------------------------
 -----------------------------------------------------------------
@@ -39,48 +63,38 @@ models/
 
 
 views/
-    404.php
+    404.php => Wyatt
         => error page
-    ads/
+    ads/ => Justin
         create.php
             => empty
-            =>
         edit.php
             => empty
-            =>
         index.php
             => empty
-            =>
         show.php
             => empty
-            =>
-    home.php
+
+    home.php => Wyatt
         => bare bones
-        =>
-    partials/
+
+    partials/ => Wyatt
         common_js.php
             => empty
-            =>
         head.php
             => empty
-            =>
         navbar.php
             => empty
-            =>
-    users/  
+
+    users/ => Mitt
         account.php
             => empty
-            =>
         edit.php
             => _SESSION
-            =>
         login.php
             => _SESSION
-            =>
         signup.php
             => _SESSION
-            =>
-
 
 
 public/ 

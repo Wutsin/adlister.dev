@@ -25,16 +25,41 @@
 <!-- form for sign up -->
 				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center">
 					
-					<!-- image -->
-					<div class="fileupload fileupload-new" data-provides="fileupload">
-						<div class="fileupload-preview thumbnail round" style="width: 200px; height: 150px;"></div>
-					  	<div>
-					    	<span class="btn btn-file">
-					    		<span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" />
-					    	</span>
-					    	<a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-					  	</div>
-					</div>
+					<!-- Image uploader -->
+	            	<div class="imageupload panel panel-default">
+		                <!-- top of image upload box -->
+		                <div class="panel-heading clearfix">
+		                    <h3 class="panel-title pull-left">Upload Image</h3>
+		                    <div class="btn-group pull-right">
+		                        <button type="button" class="btn btn-default active">File</button>
+		                        <button type="button" class="btn btn-default">URL</button>
+		                    </div>
+		                </div>
+
+		                <!-- middle of image box -->
+		                <div class="file-tab panel-body">
+		                    <label class="btn btn-default btn-file">
+		                        <span>Browse</span>
+		                        <!-- The file is stored here. -->
+		                        <input type="file" name="image-file">
+		                    </label>
+		                    <button type="button" class="btn btn-default">Remove</button>
+		                </div>
+
+		                <!-- bellow box -->
+		                <div class="url-tab panel-body">
+		                    <div class="input-group">
+		                        <input type="text" class="form-control" placeholder="Image URL">
+		                        <div class="input-group-btn">
+		                            <button type="button" class="btn btn-default">Submit</button>
+		                        </div>
+		                    </div>
+
+		                    <!-- The URL is stored here. -->
+		                    <button type="button" class="btn btn-default">Remove</button>
+		                    <input type="hidden" name="image-url">
+		                </div>
+		            </div>
 
 					
 					<!-- form info -->

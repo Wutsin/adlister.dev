@@ -24,54 +24,6 @@
         text-align: center;
     }
 
-    /*Image Upload CSS*/
-    .imageupload.imageupload-disabled {
-        cursor: not-allowed;
-        opacity: 0.60;
-    }
-    .imageupload.imageupload-disabled > * {
-        pointer-events: none;
-    }
-    .imageupload .panel-title {
-        padding-top: 8px;
-    }
-    .imageupload .alert {
-        margin-bottom: 10px;
-    }
-    .imageupload .btn-file {
-        overflow: hidden;
-        position: relative;
-    }
-    .imageupload .btn-file input[type="file"] {
-        cursor: inherit;
-        display: block;
-        font-size: 100px;
-        min-height: 100%;
-        min-width: 100%;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        text-align: right;
-        top: 0;
-    }
-    .imageupload .file-tab button {
-        display: none;
-    }
-    .imageupload .file-tab .thumbnail {
-        margin-bottom: 10px;
-    }
-    .imageupload .url-tab {
-        display: none;
-    }
-    .imageupload .url-tab .thumbnail {
-        margin: 10px 0;
-    }
-
-    /* Country/County uploader */
-    #county_drop_down, #no_county_drop_down, #loading_county_drop_down {
-        display: none;
-    }
-
 </style>
 
 <main class="container-fluid custom-ad-edit-main imageupload">

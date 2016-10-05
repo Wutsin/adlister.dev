@@ -1,9 +1,3 @@
-<div class="container">
-
-	<section>
-
-		<h1 class="section-title">404 Error</h1>
-
-	</section>
-
+<div class="container-fluid img-404">
+	<img src="/deathStar404Page.png" alt="404 Not Found Page" class="image-fluid deathStarImg">
 </div>

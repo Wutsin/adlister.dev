@@ -31,6 +31,9 @@
         <li><a href="/index">Items</a></li>
         <li><a href="/login">Login</a></li>
         <li><a href="/signup">SignUp</a></li>
+        <li><a href="/account">Account</a></li>
+        <li><a href="/">Logout</a></li>
+        <li><a href="/create">Post Ad</a></li>
       </ul>
       <!-- navbar-left will move the search to the left -->
       <form class="navbar-form navbar-right" role="search">

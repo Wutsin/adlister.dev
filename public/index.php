@@ -9,7 +9,7 @@ require_once __DIR__ . '/../bootstrap.php';
     <title>OooLister</title>
     <?php require '../views/partials/head.php'; ?>
 </head>
-<body class="<?= ($black_background) ? 'black-background' : '' ?>">
+<body class="<?= (isset($black_background)) ? 'black-background' : '' ?>">
     <?php require '../views/partials/navbar.php'; ?>
 
     <?php require $main_view; ?>

@@ -21,7 +21,7 @@
       </button>
 
       <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
-      <a class="pull-left wutsinLogo" href="/"><img src="/wutsinLogo.png"></a>
+      <a class="pull-left wutsinLogo" href="/"><img src="/img/wutsinLogo.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

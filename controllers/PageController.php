@@ -43,7 +43,7 @@ function pageController()
       case '/account' :
         $main_view = '../views/users/account.php';
         break;
-      case '/edit' :
+      case '/editUser' :
         $main_view = '../views/users/edit.php';
         break;
       case '/login' :

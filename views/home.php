@@ -23,7 +23,7 @@
                         <div class="thumbnail">
                             <a href="#" class="thumbnail custom-anchor"> <!-- this link will go to the item page -->
                                 <div class="caption">
-                                    <img src="/testbox.png" alt="Image File Path Bad" class="featuredImg">
+                                    <img src="/img/hulk_skateboard.png" alt="Image File Path Bad" class="featuredImg">
                                     <h4 class="custom-h3">Title</h4>
                                     <p>Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
@@ -34,7 +34,7 @@
                         <div class="thumbnail">
                             <a href="#" class="thumbnail custom-anchor"> <!-- this link will go to the item page -->
                                 <div class="caption">
-                                    <img src="/testbox.png" alt="Image File Path Bad" class="featuredImg">
+                                    <img src="/img/mars_attacks_bike.jpg" alt="Image File Path Bad" class="featuredImg">
                                     <h4 class="custom-h3">Title</h4>
                                     <p>Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
@@ -45,7 +45,7 @@
                         <div class="thumbnail">
                             <a href="#" class="thumbnail custom-anchor"> <!-- this link will go to the item page -->
                                 <div class="caption">
-                                    <img src="/testbox.png" alt="Image File Path Bad" class="featuredImg">
+                                    <img src="/img/gizmoduck_uni.jpg" alt="Image File Path Bad" class="featuredImg">
                                     <h4 class="custom-h3">Title</h4>
                                     <p>Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>

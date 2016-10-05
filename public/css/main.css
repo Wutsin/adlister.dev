@@ -1,3 +1,9 @@
+/* COMMON BODY */
+
+body {
+    background-color: lightsteelblue;
+}
+
 /*FOR NAVBAR*/
 .navBarBackgroundColor {
     background-color: #F1F1F1;
@@ -97,4 +103,70 @@
     display: none;
 }
 
+/* AD SHOW */
 
+.custom-adSHOW-ad-img {
+    width: 25%;
+}
+.custom-adSHOW-ad-show-header {
+    text-align: center;
+}
+.custom-adSHOW-h3 {
+    text-align: center;
+}
+.custom-adSHOW-anchor {
+    margin: 0;
+}
+.custom-adSHOW-center {
+    text-align: center;
+}
+
+/* AD INDEX */
+
+.custom-adINDEX-ad-img {
+    width: 100%;
+}
+.custom-adINDEX-ad-img a {
+    margin: 0;
+}
+.custom-adINDEX-h3 {
+    text-align: center;
+}
+.custom-adINDEX-anchor {
+    margin: 0;
+}
+
+/* AD EDIT */
+.custom-adEDIT-ad-img {
+    width: 100%;
+}
+.custom-adEDIT-ad-img a {
+    margin: 0;
+}
+.custom-adEDIT-h3 {
+    text-align: center;
+}
+.custom-adEDIT-anchor {
+    margin: 0;
+}
+.custom-adEDIT-ad-edit-main {
+    text-align: center;
+}
+
+
+/* AD CREATE */
+.custom-adCREATE-ad-img {
+    width: 100%;
+}
+.custom-adCREATE-ad-img a {
+    margin: 0;
+}
+.custom-adCREATE-h3 {
+    text-align: center;
+}
+.custom-adCREATE-anchor {
+    margin: 0;
+}
+.custom-adCREATE-ad-edit-main {
+    text-align: center;
+}

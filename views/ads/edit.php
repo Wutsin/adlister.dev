@@ -1,81 +1,8 @@
 <!-- adlister.dev/edit -->
 <!--Page that includes the form to edit an existing ad-->
 
-<style type="text/css">
-   /* Styling for ad edit */
 
-   /* * {
-        border: 1px lime solid;
-    }*/
-    body {
-        background-color: LightSteelBlue;
-    }
-    .custom-ad-img {
-        width: 100%;
-    }
-    .custom-ad-img a {
-        margin: 0;
-    }
-    .custom-h3 {
-        text-align: center;
-    }
-    .custom-anchor {
-        margin: 0;
-    }
-    .custom-ad-edit-main {
-        text-align: center;
-    }
-
-    /*Image Upload CSS*/
-    .imageupload.imageupload-disabled {
-        cursor: not-allowed;
-        opacity: 0.60;
-    }
-    .imageupload.imageupload-disabled > * {
-        pointer-events: none;
-    }
-    .imageupload .panel-title {
-        padding-top: 8px;
-    }
-    .imageupload .alert {
-        margin-bottom: 10px;
-    }
-    .imageupload .btn-file {
-        overflow: hidden;
-        position: relative;
-    }
-    .imageupload .btn-file input[type="file"] {
-        cursor: inherit;
-        display: block;
-        font-size: 100px;
-        min-height: 100%;
-        min-width: 100%;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        text-align: right;
-        top: 0;
-    }
-    .imageupload .file-tab button {
-        display: none;
-    }
-    .imageupload .file-tab .thumbnail {
-        margin-bottom: 10px;
-    }
-    .imageupload .url-tab {
-        display: none;
-    }
-    .imageupload .url-tab .thumbnail {
-        margin: 10px 0;
-    }
-
-    /* Country/County uploader */
-    #county_drop_down, #no_county_drop_down, #loading_county_drop_down {
-        display: none;
-    }
-</style>
-
-<main class="container-fluid custom-ad-edit-main imageupload">
+<main class="container-fluid custom-adEDIT-ad-edit-main imageupload">
     <h2>Update Item</h2>
     <!-- <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2"> -->
     <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">

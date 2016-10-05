@@ -54,8 +54,19 @@
             <textarea id="description" type="text" name="description" class="form-control" value="" rows="5"></textarea><br>
             <button type="submit" class="btn btn-default">Submit</button><br>
         </form>
+    <div class="fileupload fileupload-new" data-provides="fileupload">
+        <div class="fileupload-preview thumbnail round" style="width: 200px; height: 150px;"></div>
+        <div>
+            <span class="btn btn-file">
+                <span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" />
+            </span>
+            <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+        </div>
+    </div>
     </div>
 </main>
+
+<!-- image -->
 
 <!-- jQuery Version 1.11.1 -->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

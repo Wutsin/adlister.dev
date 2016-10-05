@@ -78,10 +78,10 @@
 
 
             <!-- States/Counties Selector -->
-            <table width="317" border="0" align="center">
+            <table class="table table-bordered">
                <tr>
-                 <td width="100">State</td>
-                 <td width="217"><select id="state" name="state">
+                 <td>State</td>
+                 <td><select id="state" name="state" class="btn btn-default dropdown-toggle">
                    <option value='AL'>Alabama</option>
                    <option value='AK'>Alaska</option>
                    <option value='AZ'>Arizona</option>
@@ -137,7 +137,7 @@
                </tr>
                <tr>
                  <td height="33">County</td>
-                 <td><div id="county_drop_down"><select id="county" name="county"><option value="">County...</option></select></div>
+                 <td><div id="county_drop_down"><select id="county" name="county" class="btn btn-default dropdown-toggle"><option value="">County...</option></select></div>
                  <span id="loading_county_drop_down"><img src="style/loader.gif" width="16" height="16" align="absmiddle">&nbsp;Loading...</span>
                  <div id="no_county_drop_down">This state has no counties.</div></td>
                </tr>

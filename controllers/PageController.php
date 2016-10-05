@@ -54,6 +54,7 @@ function pageController()
         break;
 
         default:    // displays 404 if route not specified above
+            $data['black_background'] = true;
             $main_view = '../views/404.php';
             break;
     }

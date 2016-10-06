@@ -2,6 +2,8 @@
 
 // require models
 require_once __DIR__ . '/models/User.php';
+require_once __DIR__ . '/models/Item.php';
+require_once __DIR__ . '/models/Item_Type.php';
 
 
 // require helper classes

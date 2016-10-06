@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="/index">Items</a></li>
+        <li><a href="/ads">Items</a></li>
         <li><a href="/login">Login</a></li>
         <li><a href="/signup">SignUp</a></li>
         <li><a href="/account">Account</a></li>

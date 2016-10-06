@@ -9,7 +9,7 @@ $query = 'CREATE TABLE items (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id INT UNSIGNED NOT NULL,
     item_type INT UNSIGNED NOT NULL,
-    name VARCHAR(255) NOT NULL,
+    headline CHAR(25) NOT NULL,
     price DECIMAL(13,2) NOT NULL,
     date_listed DATE NOT NULL,
     state VARCHAR(255) NOT NULL,

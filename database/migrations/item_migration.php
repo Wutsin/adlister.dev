@@ -8,16 +8,17 @@ $dbc->exec('DROP TABLE IF EXISTS items');
 $query = 'CREATE TABLE items (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id INT UNSIGNED NOT NULL,
+    item_type INT UNSIGNED NOT NULL,
     name VARCHAR(255) NOT NULL,
     price DECIMAL(13,2) NOT NULL,
-    -- item_type ENUM (bicyle, unicycle, skateboard) UNSIGNED NOT NULL,
     date_listed DATE NOT NULL,
     state VARCHAR(255) NOT NULL,
     county VARCHAR(255) NOT NULL,
-    image_url VARCHAR(255) NOT NULL,
-    description TEXT(500) NOT NULL,
+    image_url TEXT NOT NULL,
+    description TEXT NOT NULL,
+    PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users (id),
-    PRIMARY KEY (id)
+    FOREIGN KEY (item_type) REFERENCES item_types (id)
 )';
 
 $dbc->exec($query);

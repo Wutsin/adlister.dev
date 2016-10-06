@@ -14,7 +14,19 @@
             <input id="price" type="text" name="price" class="form-control" value=""><br>
             <label>Description</label><br>
             <textarea id="description" type="text" name="description" class="form-control" value="" rows="5"></textarea><br>
-            
+            <label>Choose Type of Item for Sale</label>
+            <div class="dropdown form-group">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownItemType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Type of Item
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownItemType">
+                <li><a href="#">Bicycle</a></li>
+                <li><a href="#">Skateboard</a></li>
+                <li><a href="#">Unicycle</a></li>
+              </ul>
+            </div>
+
            <!-- Image uploader -->
             <div class="imageupload panel panel-default">
                 <!-- top of image upload box -->
@@ -129,8 +141,3 @@
 
     </div>
 </main>
-
-
-
-
-

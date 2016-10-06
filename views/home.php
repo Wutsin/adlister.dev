@@ -16,7 +16,8 @@
 
     <section id="features">
         <div class="row">
-            <h3 class="section-title">Featured Items</h3>
+            <h3 class="section-title featuredItemsHeader">Featured Items</h3>
+            <hr>
             <div class="container">
                 <!-- <div class="row"> -->
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">

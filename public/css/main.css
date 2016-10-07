@@ -139,6 +139,15 @@ body {
     margin: 0;
 }
 
+.customThumbNail {
+    height: 530px;
+    width: 360px
+}
+
+.customCaption {
+    height: 500px;
+}
+
 /* AD EDIT */
 .custom-adEDIT-ad-img {
     width: 100%;

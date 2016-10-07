@@ -24,16 +24,12 @@
 
 <!-- form for profile update -->
 				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center">
-
+				
 					<!-- Image uploader -->
 	            	<div class="imageupload panel panel-default">
 		                <!-- top of image upload box -->
 		                <div class="panel-heading clearfix">
 		                    <h3 class="panel-title pull-left">Upload Image</h3>
-		                    <div class="btn-group pull-right">
-		                        <button type="button" class="btn btn-default active">File</button>
-		                        <button type="button" class="btn btn-default">URL</button>
-		                    </div>
 		                </div>
 
 		                <!-- middle of image box -->
@@ -45,22 +41,10 @@
 		                    </label>
 		                    <button type="button" class="btn btn-default">Remove</button>
 		                </div>
-
-		                <!-- bellow box -->
-		                <div class="url-tab panel-body">
-		                    <div class="input-group">
-		                        <input type="text" class="form-control" placeholder="Image URL">
-		                        <div class="input-group-btn">
-		                            <button type="button" class="btn btn-default">Submit</button>
-		                        </div>
-		                    </div>
-
-		                    <!-- The URL is stored here. -->
-		                    <button type="button" class="btn btn-default">Remove</button>
-		                    <input type="hidden" name="image-url">
-		                </div>
 		            </div>
-		            
+
+
+
 					<!-- form update info -->
 					<div class="form-group">
 					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?//= $user->username; ?>" data-required>

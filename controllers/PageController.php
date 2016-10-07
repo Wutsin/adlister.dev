@@ -34,6 +34,9 @@ function pageController()
       case '/edit' :
         $main_view = '../views/ads/edit.php';
         break;
+      case '/ads' :
+        // $data['items'] = Item::all();
+        $main_view = '../views/ads/index.php';
       case '/index' :
         $main_view = '../views/ads/index.php';
         break;

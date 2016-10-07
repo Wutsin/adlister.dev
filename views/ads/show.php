@@ -26,10 +26,11 @@
                             <li class="list-group-item"><?= '$' . $items->attributes['price']; ?></li>
                             <li class="list-group-item"><?= $items->attributes['state']; ?></li>
                             <li class="list-group-item"><?= $items->attributes['county']; ?></li>
-                            <li class="list-group-item"><?= $items->attributes['item_type']; ?></li>
+                            <!-- <li class="list-group-item"><?= $items->attributes['item_type']; ?></li> -->
+                            <li class="list-group-item"><?= $item_types->attributes['name']; ?></li>
                         </ul>
                     </div>
-                    <p>Posted by <a href="#"><?= $items->attributes['user_id']; ?></a></p>
+                    <p>Posted by <a href="#"><?= $users->attributes['username'] ; ?></a></p>
                 </div>
                 <button class="btn btn-danger custom-adSHOW-show-btn center-block">Delete Ad</button>
             </div>

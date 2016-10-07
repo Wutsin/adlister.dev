@@ -42,6 +42,8 @@ function pageController()
         break;
       case '/show' :
         $data['items'] = Item::find($itemId);
+        $data['users'] = User::find($data['items']->attributes['user_id']);
+        $data['item_types'] = Item_Type::find($data['items']->attributes['item_type']);
         $main_view = '../views/ads/show.php';
         break;
       case '/account' :

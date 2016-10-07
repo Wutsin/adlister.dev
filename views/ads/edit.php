@@ -16,15 +16,13 @@
             <textarea id="description" type="text" name="description" class="form-control" rows="5"><?= $items->attributes['description']; ?></textarea><br>
             <label>Choose Type of Item for Sale</label>
             <div class="dropdown form-group">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownItemType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Type of Item
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownItemType">
-                <li><a href="#">Bicycle</a></li>
-                <li><a href="#">Skateboard</a></li>
-                <li><a href="#">Unicycle</a></li>
-              </ul>
+              <div class="dropdown form-group">
+                    <select class="btn btn-default dropdown-toggle" name="item_type">
+                        <option value="Bicycle">Bicycle</option>
+                        <option value="Unicycle">Unicycle</option>
+                        <option value="Skateboard">Skateboard</option>
+                    </select>
+                </div>
             </div>
 
 

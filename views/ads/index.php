@@ -4,7 +4,7 @@
         <div class="row">
 
             <?php foreach($items->attributes as $item) : ?>
-            <div class="col-xs-12x   col-sm-6 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                 <div class="thumbnail">
                     <a href="/show?id=<?= $item['id']; ?>" class="thumbnail custom-adINDEX-anchor">
                         <div class="caption">

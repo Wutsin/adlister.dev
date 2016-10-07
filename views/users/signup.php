@@ -24,7 +24,7 @@
 
 <!-- form for sign up -->
 				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center">
-					
+
 					<!-- Image uploader -->
 	            	<div class="imageupload panel panel-default">
 		                <!-- top of image upload box -->
@@ -43,7 +43,7 @@
 		                </div>
 		            </div>
 
-					
+
 					<!-- form info -->
 					<div class="form-group">
 					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" data-required>
@@ -52,7 +52,7 @@
 					<div class="form-group">
 					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-required>
 					</div>
-					
+
 					<div class="form-group">
 					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
 					</div>
@@ -62,21 +62,13 @@
 					</div>
 
 					<div class="row">
-						<div class="col-md-6">
-							<button type="submit" class="btn btn-primary">Signup</button>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+							<button type="submit" class="btn btn-primary signupButton">Signup</button>
 						</div>
 					</div>
-					
+
 				</form> <!-- close post form -->
 			</div> <!-- close col-md -->
 		</div> <!-- close row -->
 	</section> <!-- close login -->
 </div> <!-- close container -->
-
-
-
-
-
-
-
-

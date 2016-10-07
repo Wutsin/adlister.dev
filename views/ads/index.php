@@ -6,13 +6,13 @@
             <?php foreach($items->attributes as $item) : ?>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                 <div class="thumbnail">
-                    <a href="/show?id=<?= $item['id']; ?>" class="thumbnail custom-adINDEX-anchor">
+                    <a href="/show?itemId=<?= $item['id']; ?>" class="thumbnail custom-adINDEX-anchor">
                         <div class="caption">
                             <img src=<?= $item['image_url']; ?> alt="Image File Path Bad" class="custom-adINDEX-ad-img">
                             <h4 class="custom-adINDEX-h3"><?= $item['headline']; ?></h4>
                             <p><?= '$' . $item['price']; ?></p>
-                            <p><?= $item['state']; ?></p>
-                            <p><?= $item['county']; ?></p>
+                            <p>State: <?= $item['state']; ?></p>
+                            <p>County: <?= $item['county']; ?></p>
                         </div>
                     </a>
                 </div>

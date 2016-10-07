@@ -14,8 +14,11 @@ function pageController()
     // if a ? was found, cuts off get variables if not just gives full url
     if ($get_pos !== false)
     {
-        if (isset($_REQUEST['id'])) {
-          $itemId = $_REQUEST['id'];
+        if (isset($_REQUEST['itemId'])) {
+          $itemId = $_REQUEST['itemId'];
+        }
+        if (isset($_REQUEST['userId'])) {
+          $userId = $_REQUEST['userId'];
         }
         $request = substr($_SERVER['REQUEST_URI'], 0, $get_pos);
     }
@@ -44,11 +47,13 @@ function pageController()
         break;
       case '/show' :
         $data['items'] = Item::find($itemId);
-        $data['users'] = User::find($data['items']->attributes['user_id']);
+        $data['user'] = User::find($data['items']->user_id);
         $data['item_types'] = Item_Type::find($data['items']->attributes['item_type']);
         $main_view = '../views/ads/show.php';
         break;
       case '/account' :
+        $data['items'] = Item::findByUserId($userId);
+        $data['user'] = User::find($userId);
         $main_view = '../views/users/account.php';
         break;
       case '/editUser' :

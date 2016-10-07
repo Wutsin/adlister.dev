@@ -25,7 +25,7 @@
                             <li class="list-group-item"><?= '$' . $items->attributes['price']; ?></li>
                             <li class="list-group-item">State: <?= $items->attributes['state']; ?></li>
                             <li class="list-group-item">County: <?= $items->attributes['county']; ?></li>
-                            <li class="list-group-item">Type of Item: <?= $item_types->attributes['name']; ?></li>
+                            <li class="list-group-item">Type of Item: <?= $items->attributes['item_type']; ?></li>
                         </ul>
                     </div>
                     <p>Posted by <a href="/account?userId=<?= $user->id; ?>"><?= $user->username ; ?></a></p>

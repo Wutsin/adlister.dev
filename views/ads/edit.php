@@ -8,12 +8,12 @@
     <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
     <!-- <div> -->
         <form class="form-group" name="form">
-            <label for="name">Name</label><br>
-            <input id="name" type="text" name="name" class="form-control" value=""><br>
+            <label for="name">Headline</label><br>
+            <input id="name" type="text" name="headline" class="form-control" value="<?= $items->attributes['headline']; ?>"><br>
             <label>Price</label><br>
-            <input id="price" type="text" name="price" class="form-control" value=""><br>
+            <input id="price" type="text" name="price" class="form-control" value="<?= '$' . $items->attributes['price']; ?>"><br>
             <label>Description</label><br>
-            <textarea id="description" type="text" name="description" class="form-control" value="" rows="5"></textarea><br>
+            <textarea id="description" type="text" name="description" class="form-control" rows="5"><?= $items->attributes['description']; ?></textarea><br>
             <label>Choose Type of Item for Sale</label>
             <div class="dropdown form-group">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownItemType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +40,7 @@
                     <label class="btn btn-default btn-file">
                         <span>Browse</span>
                         <!-- The file is stored here. -->
-                        <input type="file" name="image-file">
+                        <input type="file" name="image-file" value="<?= $items->attributes['image_url']; ?>">
                     </label>
                     <button type="button" class="btn btn-default">Remove</button>
                 </div>

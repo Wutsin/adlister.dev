@@ -34,6 +34,7 @@ function pageController()
         $main_view = '../views/ads/create.php';
         break;
       case '/edit' :
+        $data['items'] = Item::find($itemId);
         $main_view = '../views/ads/edit.php';
         break;
       case '/ads' :

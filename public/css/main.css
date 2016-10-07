@@ -148,6 +148,10 @@ body {
     height: 500px;
 }
 
+.itemsForSaleHeader {
+    margin-left: 6%;
+}
+
 /* AD EDIT */
 .custom-adEDIT-ad-img {
     width: 100%;

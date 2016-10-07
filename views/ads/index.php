@@ -1,5 +1,5 @@
 <main>
-    <h2>Items for Sale</h2>
+    <h2 class="itemsForSaleHeader">Items for Sale</h2>
     <div class="container">
         <div class="row">
 

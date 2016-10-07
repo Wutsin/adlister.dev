@@ -23,7 +23,7 @@
 	            <?php endif; ?>
 
 <!-- form for sign up -->
-				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center">
+				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center" enctype="multipart/form-data">
 
 					<!-- Image uploader -->
 	            	<div class="imageupload panel panel-default">

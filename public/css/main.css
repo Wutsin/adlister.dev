@@ -187,6 +187,10 @@ body {
 
 }
 
+.createItemHeader {
+    text-align: center;
+}
+
  /* FOR LOGIN PAGE */
  .loginButtons {
      width: 100%;

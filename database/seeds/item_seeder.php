@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 require_once __DIR__ . '/../../models/Item.php';
 
 // bike1
 $item = new Item;
 $item->user_id = 1;
-$item->item_type = 1;
+$item->item_type = "Bicycle";
 $item->headline = "GT hybrid Bicycle";
 $item->price = 110;
 $item->date_listed = "2016-10-2";
@@ -18,7 +18,7 @@ $item->save();
 // bike2
 $item = new Item;
 $item->user_id = 2;
-$item->item_type = 1;
+$item->item_type = "Bicycle";
 $item->headline = "Australian Made by Paul Hillbrick";
 $item->price = 999;
 $item->date_listed = "2016-03-15";
@@ -31,7 +31,7 @@ $item->save();
 // uni1
 $item = new Item;
 $item->user_id = 3;
-$item->item_type = 2;
+$item->item_type = "Unicycle";
 $item->headline = "InMotion ELectric Unicycle";
 $item->price = 799;
 $item->date_listed = "2016-07-05";
@@ -44,7 +44,7 @@ $item->save();
 // uni2
 $item = new Item;
 $item->user_id = 4;
-$item->item_type = 2;
+$item->item_type = "Unicycle";
 $item->headline = "SkyHigh 20in. Unicycle";
 $item->price = 139.99;
 $item->date_listed = "2016-06-08";
@@ -57,7 +57,7 @@ $item->save();
 // skateboard1
 $item = new Item;
 $item->user_id = 5;
-$item->item_type = 3;
+$item->item_type = "Skateboard";
 $item->headline = "10in One Wheel Smart ELectric Skateboard";
 $item->price = 469;
 $item->date_listed = "2016-04-09";
@@ -70,7 +70,7 @@ $item->save();
 // skateboard2
 $item = new Item;
 $item->user_id = 1;
-$item->item_type = 3;
+$item->item_type = "Skateboard";
 $item->headline = "Krainkn Skateboards Pro Complete ";
 $item->price = 69.11;
 $item->date_listed = "2016-10-01";
@@ -79,40 +79,3 @@ $item->county  = "Howard County";
 $item->image_url = "/img/sb2.jpeg";
 $item->description  = "Krainkn is a new way to ride a traditional skateboard. It is a great training tool and also a new extreme sport. Practice new tricks that work well for Krainkn and for snowboarding. Teach yourself, your kids or your friends how to ride a skateboard in one day. It's also a great workout and can be a very extreme sport. ";
 $item->save();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

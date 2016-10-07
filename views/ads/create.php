@@ -18,9 +18,9 @@
                 <label>Choose Type of Item for Sale</label>
                 <div class="dropdown form-group">
                     <select class="btn btn-default dropdown-toggle" name="item_type">
-                        <option value="1">Bicycle</option>
-                        <option value="2">Unicycle</option>
-                        <option value="3">Skateboard</option>
+                        <option value="Bicycle">Bicycle</option>
+                        <option value="Unicycle">Unicycle</option>
+                        <option value="Skateboard">Skateboard</option>
                     </select>
                 </div>
 

@@ -8,24 +8,20 @@
         <!-- <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2"> -->
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
         <!-- <div> -->
-            <form class="form-group" name="form">
-                <label for="name">Name</label><br>
-                <input id="name" type="text" name="name" class="form-control" value=""><br>
+            <form class="form-group" name="form" method="POST" enctype="multipart/form-data">
+                <label for="headline">Headline</label><br>
+                <input id="headline" type="text" name="headline" class="form-control" value=""><br>
                 <label>Price</label><br>
                 <input id="price" type="text" name="price" class="form-control" value=""><br>
                 <label>Description</label><br>
                 <textarea id="description" type="text" name="description" class="form-control" value="" rows="5"></textarea><br>
                 <label>Choose Type of Item for Sale</label>
                 <div class="dropdown form-group">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownItemType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Type of Item
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownItemType">
-                    <li><a href="#">Bicycle</a></li>
-                    <li><a href="#">Skateboard</a></li>
-                    <li><a href="#">Unicycle</a></li>
-                  </ul>
+                    <select class="btn btn-default dropdown-toggle" name="item_type">
+                        <option value="1">Bicycle</option>
+                        <option value="2">Unicycle</option>
+                        <option value="3">Skateboard</option>
+                    </select>
                 </div>
 
                <!-- Image uploader -->
@@ -34,8 +30,6 @@
                     <div class="panel-heading clearfix">
                         <h3 class="panel-title pull-left">Upload Image</h3>
                         <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-default active">File</button>
-                            <button type="button" class="btn btn-default">URL</button>
                         </div>
                     </div>
 
@@ -44,24 +38,11 @@
                         <label class="btn btn-default btn-file">
                             <span>Browse</span>
                             <!-- The file is stored here. -->
-                            <input type="file" name="image-file">
+                            <input type="file" name="image_url">
                         </label>
                         <button type="button" class="btn btn-default">Remove</button>
                     </div>
 
-                    <!-- bellow box -->
-                    <div class="url-tab panel-body">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Image URL">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-default">Submit</button>
-                            </div>
-                        </div>
-
-                        <!-- The URL is stored here. -->
-                        <button type="button" class="btn btn-default">Remove</button>
-                        <input type="hidden" name="image-url">
-                    </div>
                 </div>
 
 

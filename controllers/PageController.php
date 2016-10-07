@@ -31,6 +31,9 @@ function pageController()
         $main_view = '../views/home.php';
         break;
       case '/create' :
+        if($_POST) {
+            itemsSave();
+        }
         $main_view = '../views/ads/create.php';
         break;
       case '/edit' :

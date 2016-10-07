@@ -43,3 +43,19 @@ function saveUploadedImage($input_name)
         return null;
     }
 }
+
+function itemsSave()
+{
+    $item = new Item();
+    $item->item_type = Input::get('item_type');
+    $item->headline = Input::get('headline');
+    $item->price = Input::get('price');
+    $item->date_listed = date('Y-m-d');
+    $item->state = Input::get('state');
+    $item->county = Input::get('county');
+    $item->image_url = saveUploadedImage('image_url');
+    $item->description = Input::get('description');
+    // $item->user_id = Auth::id();
+    $item->user_id = 1;
+    $item->save();
+}

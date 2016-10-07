@@ -50,7 +50,7 @@ function itemsSave()
     $item->item_type = Input::get('item_type');
     $item->headline = Input::get('headline');
     $item->price = Input::get('price');
-    $item->date_listed = date('Y-m-d');
+    $item->password = date('Y-m-d');
     $item->state = Input::get('state');
     $item->county = Input::get('county');
     $item->image_url = saveUploadedImage('image_url');
@@ -58,4 +58,16 @@ function itemsSave()
     // $item->user_id = Auth::id();
     $item->user_id = 1;
     $item->save();
+}
+
+function userSave()
+{
+    $user = new User();
+    $user->image_url = saveUploadedImage('image_url');
+    $user->username = Input::get('username');
+    $user->email = Input::get('email');
+    $user->password = Input::get('password');
+    $user->date_joined = date('Y-m-d');
+    // $user->user_id = Auth::id();
+    $user->save();
 }

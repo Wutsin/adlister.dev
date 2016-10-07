@@ -36,7 +36,7 @@
         <li><a href="/create">Post Ad</a></li>
       </ul>
       <!-- navbar-left will move the search to the left -->
-      <form class="navbar-form navbar-right" role="search">
+      <form method="GET" action="adlister.dev?" id="searchform" class="navbar-form navbar-right" role="search">
         <div class="input-group form-group-md">
           <input type="text" class="form-control" placeholder="Search">
           <span class="input-group-btn">

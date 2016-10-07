@@ -13,8 +13,35 @@ class Item extends Model {
 
     public function getItemType ()
     {
-        
+
     }
+
+    public static function searchItems($searchTerm)
+    {
+        self::dbConnect();
+
+        $query = "SELECT * FROM " . static::$table . " WHERE item_type LIKE '%" . $searchTerm .
+        "%' OR headline LIKE '%" . $searchTerm . "%' OR state LIKE '%" . $searchTerm .
+        "%' OR county LIKE '%" . $searchTerm . "%' OR description LIKE '%" . $searchTerm . "%';";
+
+        $stmt = self::$dbc->prepare($query);
+        $stmt->execute();
+
+          //Store the resultset in a variable named $result
+          $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+          $instance = null;
+
+          if ( $results )
+          {
+
+              $instance = new static;
+              $instance->attributes = $results;
+          }
+          
+          return $instance;
+    }
+
 }
 
 //display all the add

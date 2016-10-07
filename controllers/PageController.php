@@ -65,7 +65,7 @@ function pageController()
         break;
       case '/editUser' :
         if($_POST) {
-            itemsSave();
+            userSave();
         }
         $main_view = '../views/users/edit.php';
         break;
@@ -73,8 +73,10 @@ function pageController()
         $main_view = '../views/users/login.php';
         break;
       case '/signup' :
-        if($_POST) {
-            itemsSave();
+        if ($_POST) {
+            userSave();
+        } else {
+            echo 'Invalid input. Please refresh.';
         }
         $main_view = '../views/users/signup.php';
         break;

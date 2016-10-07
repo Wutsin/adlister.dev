@@ -13,5 +13,7 @@
 <script type="text/javascript" src="/js/drop_down.js"></script>
 
 <!-- For image uploader *** MUST STAY UNDER image-load AND drop_down.js -->
-
 <script src="/js/ad-create.js"></script>
+
+<!-- Prevent form submission for different password and confirm passwords -->
+<script src="/js/passwordConfirm.js"></script>

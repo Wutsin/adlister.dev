@@ -34,10 +34,10 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6 text-center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 							<button type="submit" class="btn btn-primary loginButtons">Login</button>
 						</div>
-						<div class="col-lg-6 text-center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 							<a href="/signup" class="btn btn-success loginButtons">Go To Signup</a>
 						</div>
 					</div>

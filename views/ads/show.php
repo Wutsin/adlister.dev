@@ -14,7 +14,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="/edit?id=<?= $items->attributes['id']; ?>"><button class="btn btn-primary custom-adSHOW-show-btn center-block">Edit Ad</button></a>
+                <a href="/edit?itemId=<?= $items->attributes['id']; ?>"><button class="btn btn-primary custom-adSHOW-show-btn center-block">Edit Ad</button></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="custom-adSHOW-center">

@@ -6,7 +6,7 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                <h1 class="text-center">Welcome To Adlister</h1>
+                <h1 class="text-center">Welcome To Wutsin Wheels</h1>
 
             </div>
 
@@ -16,7 +16,7 @@
 
     <section id="features">
         <div class="row">
-            <h3 class="section-title featuredItemsHeader">Featured Items</h3>
+            <h3 class="section-title featuredItemsHeader">Categories</h3>
             <hr>
             <div class="container">
                 <!-- <div class="row"> -->
@@ -25,8 +25,8 @@
                             <a href="#" class="thumbnail custom-anchor"> <!-- this link will go to the item page -->
                                 <div class="caption">
                                     <img src="/img/hulk_skateboard.png" alt="Image File Path Bad" class="featuredImg">
-                                    <h4 class="custom-h3">Title</h4>
-                                    <p>Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <h4 class="custom-h3">Skateboards</h4>
+                                    <p>View Skateboard Ads</p>
                                 </div>
                             </a>
                         </div>
@@ -36,8 +36,8 @@
                             <a href="#" class="thumbnail custom-anchor"> <!-- this link will go to the item page -->
                                 <div class="caption">
                                     <img src="/img/mars_attacks_bike.jpg" alt="Image File Path Bad" class="featuredImg">
-                                    <h4 class="custom-h3">Title</h4>
-                                    <p>Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <h4 class="custom-h3">Bicycles</h4>
+                                    <p>View Bicycle Ads</p>
                                 </div>
                             </a>
                         </div>
@@ -47,8 +47,8 @@
                             <a href="#" class="thumbnail custom-anchor"> <!-- this link will go to the item page -->
                                 <div class="caption">
                                     <img src="/img/gizmoduck_uni.jpg" alt="Image File Path Bad" class="featuredImg">
-                                    <h4 class="custom-h3">Title</h4>
-                                    <p>Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <h4 class="custom-h3">Unicycles</h4>
+                                    <p>View Unicycle Ads</p>
                                 </div>
                             </a>
                         </div>

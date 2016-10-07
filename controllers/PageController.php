@@ -20,6 +20,9 @@ function pageController()
         if (isset($_REQUEST['userId'])) {
           $userId = $_REQUEST['userId'];
         }
+        if (isset($_REQUEST['search'])) {
+          $search = $_REQUEST['search'];
+        }
         $request = substr($_SERVER['REQUEST_URI'], 0, $get_pos);
     }
     else

@@ -50,7 +50,12 @@ function pageController()
         $main_view = '../views/ads/edit.php';
         break;
       case '/ads' :
-        $data['items'] = Item::all();
+        $data['search'] = Item::searchItems($search);
+        if(isset($search)) {
+            $data['items'] = $data['search'];
+        } else {
+            $data['items'] = Item::all();
+        }
         $main_view = '../views/ads/index.php';
       case '/index' :
         $main_view = '../views/ads/index.php';
@@ -58,7 +63,6 @@ function pageController()
       case '/show' :
         $data['items'] = Item::find($itemId);
         $data['user'] = User::find($data['items']->user_id);
-        // $data['item_types'] = Item_Type::find($data['items']->attributes['item_type']);
         $main_view = '../views/ads/show.php';
         break;
       case '/account' :

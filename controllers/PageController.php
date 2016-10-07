@@ -40,6 +40,9 @@ function pageController()
         $main_view = '../views/ads/create.php';
         break;
       case '/edit' :
+        if($_POST) {
+            itemsSave();
+        }
         $data['items'] = Item::find($itemId);
         $main_view = '../views/ads/edit.php';
         break;
@@ -61,12 +64,18 @@ function pageController()
         $main_view = '../views/users/account.php';
         break;
       case '/editUser' :
+        if($_POST) {
+            itemsSave();
+        }
         $main_view = '../views/users/edit.php';
         break;
       case '/login' :
         $main_view = '../views/users/login.php';
         break;
       case '/signup' :
+        if($_POST) {
+            itemsSave();
+        }
         $main_view = '../views/users/signup.php';
         break;
 

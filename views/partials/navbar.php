@@ -31,7 +31,7 @@
         <li><a href="/ads">Items</a></li>
         <li><a href="/login">Login</a></li>
         <li><a href="/signup">SignUp</a></li>
-        <li><a href="/account">Account</a></li>
+        <li><a href="/account?userId=">Account</a></li>
         <li><a href="/">Logout</a></li>
         <li><a href="/create">Post Ad</a></li>
       </ul>

@@ -139,6 +139,19 @@ body {
     margin: 0;
 }
 
+.customThumbNail {
+    height: 530px;
+    width: 360px
+}
+
+.customCaption {
+    height: 500px;
+}
+
+.itemsForSaleHeader {
+    margin-left: 6%;
+}
+
 /* AD EDIT */
 .custom-adEDIT-ad-img {
     width: 100%;
@@ -172,6 +185,10 @@ body {
 }
 .custom-adCREATE-ad-edit-main {
 
+}
+
+.createItemHeader {
+    text-align: center;
 }
 
  /* FOR LOGIN PAGE */

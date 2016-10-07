@@ -4,7 +4,7 @@
 
 <main class="container-fluid custom-adCREATE-ad-edit-main imageupload">
     <div class="row">
-        <h2>Create Item</h2>
+        <h2 class="createItemHeader">Create Item</h2>
         <!-- <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2"> -->
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
         <!-- <div> -->
@@ -12,13 +12,13 @@
 
                 <label for="headline">Headline</label><br>
                 <input id="headline" type="text" name="headline" class="form-control" value=""><br>
-                
+
                 <label>Price</label><br>
                 <input id="price" type="text" name="price" class="form-control" value=""><br>
-                
+
                 <label>Description</label><br>
                 <textarea id="description" type="text" name="description" class="form-control" value="" rows="5"></textarea><br>
-                
+
                 <label>Choose Type of Item for Sale</label>
                 <div class="dropdown form-group">
                     <select class="btn btn-default dropdown-toggle" name="item_type">
@@ -106,7 +106,7 @@
                             <option value='WY'>Wyoming</option>
                         </select></td>
                     </tr>
-                    
+
                     <tr>
                         <td height="33">County</td>
                         <td><div id="county_drop_down"><select id="county" name="county" class="btn btn-default dropdown-toggle"><option value="">County...</option></select></div>

@@ -39,6 +39,8 @@ function pageController()
       case '/ads' :
         $data['items'] = Item::all();
         $main_view = '../views/ads/index.php';
+      case '/index' :
+        $main_view = '../views/ads/index.php';
         break;
       case '/show' :
         $data['items'] = Item::find($itemId);

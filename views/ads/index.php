@@ -6,7 +6,7 @@
             <?php foreach($items->attributes as $item) : ?>
             <div class="col-xs-12x   col-sm-6 col-md-6 col-lg-4">
                 <div class="thumbnail">
-                    <a href="#" class="thumbnail custom-adINDEX-anchor"> <!-- this link will go to the item page -->
+                    <a href="/show?id=<?= $item['id']; ?>" class="thumbnail custom-adINDEX-anchor">
                         <div class="caption">
                             <img src=<?= $item['image_url']; ?> alt="Image File Path Bad" class="custom-adINDEX-ad-img">
                             <h4 class="custom-adINDEX-h3"><?= $item['headline']; ?></h4>

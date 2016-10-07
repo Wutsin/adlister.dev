@@ -173,3 +173,7 @@ body {
 .custom-adCREATE-ad-edit-main {
 
 }
+ /* FOR LOGIN PAGE */
+ .loginButtons {
+     width: 100%;
+ }

@@ -3,7 +3,7 @@
 		<div class="row">
 
 			<h1 class="section-title text-center">Login</h1>
-			
+
 			<div class="col-md-6 col-md-offset-3">
 
 				<!-- checks username and password, if incorrect throws an error -->
@@ -34,10 +34,11 @@
 					</div>
 
 					<div class="row">
-						<div class="col-sm-6 text-center">
-							<button type="submit" class="btn btn-primary">Login</button>
-
-							<a href="/signup" class="btn btn-success">Go To Signup</a>
+						<div class="col-lg-6 text-center">
+							<button type="submit" class="btn btn-primary loginButtons">Login</button>
+						</div>
+						<div class="col-lg-6 text-center">
+							<a href="/signup" class="btn btn-success loginButtons">Go To Signup</a>
 						</div>
 					</div>
 
@@ -46,5 +47,3 @@
 		</div> <!-- closes row -->
 	</section> <!-- closes section login -->
 </div> <!-- closes container -->
-
-

@@ -77,6 +77,7 @@ function pageController()
             if($_POST) {
                 userSave();
             }
+            $data['user'] = User::fine($data['items']->user_id);
             $main_view = '../views/users/edit.php';
             break;
         case '/login' :
@@ -90,7 +91,7 @@ function pageController()
         case '/signup' :
             if ($_POST) {
                 userSave();
-            } 
+            }
             $main_view = '../views/users/signup.php';
             break;
 

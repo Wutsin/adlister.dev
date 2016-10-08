@@ -127,7 +127,7 @@
             </div>
 
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-              <a href="" class="btn btn-danger loginButtons">Delete Ad</a>
+              <a href="#" class="btn btn-danger loginButtons">Delete Ad</a>
             </div>
         </form>
     </div>

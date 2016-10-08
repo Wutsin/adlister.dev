@@ -75,7 +75,6 @@ function pageController()
             userSave();
         }
         $data['user'] = User::find($data['items']->user_id);
-
         $main_view = '../views/users/edit.php';
         break;
       case '/login' :

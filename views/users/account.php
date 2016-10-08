@@ -21,57 +21,55 @@
                     <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
                 <?php endif; ?>
 
-<!-- form for sign up -->
+
+                <!-- YOUR PROFILE INFO -->
                 <form method="POST" class="text-center">
                     <div class="container">
+
                         <!-- image -->
-                        <h4></h4>
-                        <img src="<?= $user->image_url; ?>">
+                        <img class="img-circle" src="<?= $user->image_url; ?>">
 
                         <!-- profile info -->
-                        <h4 class="section-title"></h4>
-
                         <h4 class="section-title"><?= $user->email; ?></h4>
+                        
+                        <!-- edit profile -->
+                        <a href="/editUser?userId=<?php echo($user->attributes['id']); ?>" class="btn btn-primary btn-md active" role="button">Update Profile</a>
                     </div>
 
+                    <!-- YOUR ADS -->
                     <div class="container">
                         <h1>Your Ads</h1>
 
                         <!-- ads info -->
                         <?php foreach ($items->attributes as $item) : ?>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="thumbnail">
-                                        <img src="<?= $item['image_url']; ?>" alt="Image File Path Bad" class="custom-adSHOW-ad-img">
-                                        <div class="caption">
-                                            <p>
-                                                <?= $item['description']; ?>
-                                            </p>
+                                <div class="thumbnail">
+                                <!-- image -->
+                                    <!-- <div> -->
+                                        <img src="<?= $item['image_url']; ?>" alt="Image File Path Bad">
+                                    <!-- </div> -->
+                                    
+                                <!-- item info -->
+                                    <div class="panel-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item active">Item Information</li>
+                                            <li class="list-group-item"><b><?= $item['headline']; ?></b></li>
+                                            <li class="list-group-item"><b>Price: </b><?= '$' . $item['price']; ?></li>
+                                            <li class="list-group-item">
+                                                <b>State: </b> <?= $item['state']; ?><br>
+                                                <b>County:</b> <?= $item['county']; ?></li>
+                                            <li class="list-group-item"><b>Description: </b><?= $item['description']; ?></li>
+                                        </ul>
+                                        
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                            <a href="/edit?itemId=<?php echo($item['id']); ?>" class="btn btn-primary loginButtons">Edit Ad</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary custom-adSHOW-show-btn center-block">Edit Ad</button>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="custom-adSHOW-center">
-                                        <div class="panel-body">
-                                            <ul class="list-group">
-                                                <li class="list-group-item active">Item Information</li>
-                                                <li class="list-group-item"><?= $item['headline']; ?></li>
-                                                <li class="list-group-item"><?= '$' . $item['price']; ?></li>
-                                                <li class="list-group-item">State: <?= $item['state']; ?></li>
-                                                <li class="list-group-item">County: <?= $item['county']; ?></li>
-                                                <li class="list-group-item">Type of Item: <?= $item['item_type']; ?></li>
-                                            </ul>
-                                        </div>
-                                        <p>Posted by <a href="/account?userId=<?= $user->id; ?>"><?= $user->username ; ?></a></p>
-                                    </div>
-                                    <button class="btn btn-danger custom-adSHOW-show-btn center-block">Delete Ad</button>
-                                </div>
-                            </div>
+
+                            </div> <!-- closes the row class -->
                         <?php endforeach; ?>
                     </div>
-
-
+                </form>
         </div> <!-- close row -->
     </section> <!-- close login -->
 </div> <!-- close container -->

@@ -26,7 +26,7 @@
                         <!-- image -->
                         <img class="img-circle" src="<?= $user->image_url; ?>">
 
-                        <!-- username -->
+                        <!-- usermna -->
                         <h1 class="section-title text-center"><?= $user->username; ?></h1>
 
                         <!-- profile info -->

@@ -3,8 +3,6 @@
     <section id="login">
         <div class="row">
 
-            <h1 class="section-title text-center"><?= $user->username; ?></h1>
-
                 <!-- checks username and password, if incorrect throws an error -->
                 <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
                     <div class="alert alert-danger">
@@ -24,8 +22,12 @@
 <!-- form for sign up -->
                 <form method="POST" class="text-center">
                     <div class="container">
+
                         <!-- image -->
                         <img class="img-circle" src="<?= $user->image_url; ?>">
+
+                        <!-- usermna -->
+                        <h1 class="section-title text-center"><?= $user->username; ?></h1>
 
                         <!-- profile info -->
                         <h4 class="section-title"><?= $user->email; ?></h4>

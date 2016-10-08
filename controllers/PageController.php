@@ -49,9 +49,9 @@ function pageController()
         $data['items'] = Item::find($itemId);
         $main_view = '../views/ads/edit.php';
         break;
-      case '/ads' :
-        $data['search'] = Item::searchItems($search);
+        case '/ads' :
         if(isset($search)) {
+            $data['search'] = Item::searchItems($search);
             $data['items'] = $data['search'];
         } else {
             $data['items'] = Item::all();

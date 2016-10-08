@@ -1,6 +1,22 @@
 <main>
-    <h2 class="itemsForSaleHeader">Items for Sale</h2>
     <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 class="itemsForSaleHeader">Items for Sale</h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-12">
+                <div class="dropdown form-group pull-right">
+                <label>Sort By</label>
+                <select name="item_type" onchange="location = this.value;" class="btn btn-default dropdown-toggle">
+                    <option value="/ads?search=" selected="selected">--Sort By--</option>
+                    <option value="/ads?search=">All</option>
+                    <option value="/ads?search=bicycle">Bicycle</option>
+                    <option value="/ads?search=unicycle">Unicycle</option>
+                    <option value="/ads?search=skateboard">Skateboard</option>
+                </select>
+            </div>
+            </div>
+        </div>
         <div class="row">
             <?php if($search === null) : ?>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -8,7 +24,7 @@
                     </div>
                 <?php else : ?>
                 <?php foreach($items->attributes as $item) : ?>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                     <div class="thumbnail customThumbNail">
                         <a href="/show?itemId=<?= $item['id']; ?>" class="thumbnail custom-adINDEX-anchor">
                             <div class="caption customCaption">

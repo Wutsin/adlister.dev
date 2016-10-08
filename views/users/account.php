@@ -3,8 +3,6 @@
     <section id="login">
         <div class="row">
 
-            <h1 class="section-title text-center"><?= $user->username; ?></h1>
-
                 <!-- checks username and password, if incorrect throws an error -->
                 <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
                     <div class="alert alert-danger">
@@ -32,6 +30,12 @@
                         <!-- profile info -->
                         <h4 class="section-title"><?= $user->email; ?></h4>
                         
+                        <!-- usermna -->
+                        <h1 class="section-title text-center"><?= $user->username; ?></h1>
+
+                        <!-- profile info -->
+                        <h4 class="section-title"><?= $user->email; ?></h4>
+
                         <!-- edit profile -->
                         <a href="/editUser?userId=<?php echo($user->attributes['id']); ?>" class="btn btn-primary btn-md active" role="button">Update Profile</a>
                     </div>
@@ -48,7 +52,7 @@
                                     <!-- <div> -->
                                         <img src="<?= $item['image_url']; ?>" alt="Image File Path Bad">
                                     <!-- </div> -->
-                                    
+
                                 <!-- item info -->
                                     <div class="panel-body">
                                         <ul class="list-group">
@@ -60,7 +64,7 @@
                                                 <b>County:</b> <?= $item['county']; ?></li>
                                             <li class="list-group-item"><b>Description: </b><?= $item['description']; ?></li>
                                         </ul>
-                                        
+
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                                             <a href="/edit?itemId=<?php echo($item['id']); ?>" class="btn btn-primary loginButtons">Edit Ad</a>
                                         </div>

@@ -4,20 +4,21 @@
 
 <main class="container-fluid custom-adEDIT-ad-edit-main imageupload">
     <h2>Update Item</h2>
+    <?= $itemUpdateMessage; ?>
 
     <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
 
-        <form class="form-group" name="form" enctype="multipart/form-data">
+        <form method="POST" class="form-group" name="form" enctype="multipart/form-data">
 
             <label for="name">Headline</label><br>
             <input id="name" type="text" name="headline" class="form-control" value="<?= $items->attributes['headline']; ?>"><br>
-            
+
             <label>Price</label><br>
             <input id="price" type="text" name="price" class="form-control" value="<?= '$' . $items->attributes['price']; ?>"><br>
-            
+
             <label>Description</label><br>
             <textarea id="description" type="text" name="description" class="form-control" rows="5"><?= $items->attributes['description']; ?></textarea><br>
-            
+
             <label>Choose Type of Item for Sale</label>
             <div class="dropdown form-group">
               <div class="dropdown form-group">
@@ -41,7 +42,7 @@
                     <label class="btn btn-default btn-file">
                         <span>Browse</span>
                         <!-- The file is stored here. -->
-                        <input type="file" name="image-file" value="<?= $items->attributes['image_url']; ?>">
+                        <input type="file" name="image_url" value="<?= $items->attributes['image_url']; ?>">
                     </label>
                     <button type="button" class="btn btn-default">Remove</button>
                 </div>
@@ -107,25 +108,26 @@
                         </select>
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td height="33">County</td>
                     <td>
                         <div id="county_drop_down"><select id="county" name="county" class="btn btn-default dropdown-toggle"><option value="">County...</option></select></div>
-                    
+
                         <span id="loading_county_drop_down"><img src="style/loader.gif" width="16" height="16" align="absmiddle">&nbsp;Loading...</span>
-                    
+
                         <div id="no_county_drop_down">This state has no counties.</div>
                     </td>
                 </tr>
             </table>
 
+            <!-- <button type="submit" class="btn btn-default">Update</button><br> -->
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                <a href="" class="btn btn-primary loginButtons">Update</a>
+              <a href="" class="btn btn-primary loginButtons">Update</a>
             </div>
-            
+
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                <a href="" class="btn btn-danger loginButtons">Delete Ad</a>
+              <a href="#" class="btn btn-danger loginButtons">Delete Ad</a>
             </div>
 
         </form>

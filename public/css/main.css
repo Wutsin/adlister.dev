@@ -29,7 +29,7 @@ body {
 }
 
 .featuredItemsHeader {
-  margin-left: 3vw;
+
 }
 
 /*FOR 404 IMAGE*/
@@ -206,19 +206,11 @@ body {
      width: 100%;
  }
 
- /* ACCOUNT PAGE */
- #login > div > form > div:nth-child(1) > img {
-    width: 25vw;
+  /* ACCOUNT PAGE */
+  #login > div > form > div:nth-child(1) > img {
+     width: 25vw;
+  }
+
+ .thumbnail > img {
+     height: 50vh;
  }
-
-.thumbnail > img {
-    height: 50vh;
-    /*float: left;*/
-}
-
-
-
-
-
-
-

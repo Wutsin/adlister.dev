@@ -23,52 +23,49 @@
                 <?php endif; ?>
 
 <!-- form for profile update -->
-                <form method="POST" action="" data-validation data-required-message="This field is required" class="text-center" enctype="multipart/form-data">
-                
-                    <!-- Image uploader -->
-                    <div class="imageupload panel panel-default">
-                        <!-- top of image upload box -->
-                        <div class="panel-heading clearfix">
-                            <h3 class="panel-title pull-left">Upload Image</h3>
-                        </div>
+				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center" enctype="multipart/form-data">
+				
+					<!-- Image uploader -->
+	            	<div class="imageupload panel panel-default">
+		                <!-- top of image upload box -->
+		                <div class="panel-heading clearfix">
+		                    <h3 class="panel-title pull-left">Upload Image</h3>
+		                </div>
 
-                        <!-- middle of image box -->
-                        <div class="file-tab panel-body">
-                            <label class="btn btn-default btn-file">
-                                <span>Browse</span>
-                                <!-- The file is stored here. -->
-                                <input type="file" name="image-file">
-                            </label>
-                            <button type="button" class="btn btn-default">Remove</button>
-                        </div>
-                    </div>
+		                <!-- middle of image box -->
+		                <div class="file-tab panel-body">
+		                    <label class="btn btn-default btn-file">
+		                        <span>Browse</span>
+		                        <!-- The file is stored here. -->
+		                        <input type="file" name="image_url">
+		                    </label>
+		                    <button type="button" class="btn btn-default">Remove</button>
+		                </div>
+		            </div>
 
+					<!-- form update info -->
+					<div class="form-group">
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->attributes['username']; ?>" data-required>
+					</div>
 
+					<div class="form-group">
+					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->attributes['email']; ?>" data-required>
+					</div>
 
-                    <!-- form update info -->
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" data-required>
-                    </div>
+					<div class="form-group">
+					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
+					</div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->email; ?>" data-required>
-                    </div>
+					<div class="form-group">
+					    <input type="password" class="form-control" id="password" name="password" placeholder="Confirm Password" data-required>
+					</div>
 
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
-                    </div>
+					<button type="submit" class="btn btn-primary">Update Account</button>
 
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Confirm Password" data-required>
-                    </div>
-
-
-                    <button type="submit" class="btn btn-primary">Update Account</button>
-
-                </form> <!-- closes form -->
-            </div>
-        </div>
-    </section>
+				</form> <!-- closes form -->
+			</div>
+		</div>
+	</section>
 </div>
 
 

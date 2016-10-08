@@ -3,15 +3,16 @@
 
 
 <main class="container-fluid custom-adEDIT-ad-edit-main imageupload">
-    <h2>Update Item</h2>
-
+    <h2>Update Item</h2> 
+    <?= $itemUpdateMessage; ?>
+ 
     <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
 
-        <form class="form-group" name="form" enctype="multipart/form-data">
+        <form method="POST" class="form-group" name="form" enctype="multipart/form-data">
 
             <label for="name">Headline</label><br>
             <input id="name" type="text" name="headline" class="form-control" value="<?= $items->attributes['headline']; ?>"><br>
-            
+
             <label>Price</label><br>
             <input id="price" type="text" name="price" class="form-control" value="<?= '$' . $items->attributes['price']; ?>"><br>
             
@@ -41,7 +42,7 @@
                     <label class="btn btn-default btn-file">
                         <span>Browse</span>
                         <!-- The file is stored here. -->
-                        <input type="file" name="image-file" value="<?= $items->attributes['image_url']; ?>">
+                        <input type="file" name="image_url" value="<?= $items->attributes['image_url']; ?>">
                     </label>
                     <button type="button" class="btn btn-default">Remove</button>
                 </div>

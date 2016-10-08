@@ -50,12 +50,30 @@ function itemsSave()
     $item->item_type = Input::get('item_type');
     $item->headline = Input::get('headline');
     $item->price = Input::get('price');
-    $item->password = date('Y-m-d');
+    $item->date_listed = date('Y-m-d');
     $item->state = Input::get('state');
     $item->county = Input::get('county');
     $item->image_url = saveUploadedImage('image_url');
     $item->description = Input::get('description');
     // $item->user_id = Auth::id();
+    $item->user_id = 1;
+    $item->save();
+}
+
+
+function itemsUpdate($items)
+{
+    $item = new Item();
+    $item->id = $items->attributes['id'];
+    $item->item_type = Input::get('item_type');
+    $item->headline = Input::get('headline');
+    $item->price = substr(Input::get('price'), 1);
+    $item->state = Input::get('state');
+    $item->county = Input::get('county');
+    $item->image_url = saveUploadedImage('image_url');
+    $item->description = Input::get('description');
+    // $item->user_id = Auth::id();
+    $data['itemUpdateMessage'] = "Item was updated";
     $item->user_id = 1;
     $item->save();
 }

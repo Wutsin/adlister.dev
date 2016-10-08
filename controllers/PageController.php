@@ -49,7 +49,6 @@ function pageController()
             if($_POST) {
                 itemsUpdate($data['items']);
             }
-            $data['items'] = Item::find($itemId);
             $main_view = '../views/ads/edit.php';
             break;
         case '/ads' :
@@ -74,10 +73,11 @@ function pageController()
             $main_view = '../views/users/account.php';
             break;
         case '/editUser' :
+            $data['user'] = User::find($userId);
             if($_POST) {
-                userSave();
+                userUpdate($data['user']);
             }
-            $data['user'] = User::fine($data['items']->user_id);
+            // $data['items'] = User::find($itemId);
             $main_view = '../views/users/edit.php';
             break;
         case '/login' :

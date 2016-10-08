@@ -37,7 +37,7 @@
 		                    <label class="btn btn-default btn-file">
 		                        <span>Browse</span>
 		                        <!-- The file is stored here. -->
-		                        <input type="file" name="image-file">
+		                        <input type="file" name="image_url">
 		                    </label>
 		                    <button type="button" class="btn btn-default">Remove</button>
 		                </div>
@@ -47,11 +47,11 @@
 
 					<!-- form update info -->
 					<div class="form-group">
-					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?//= $user->username; ?>" data-required>
+					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->attributes['username']; ?>" data-required>
 					</div>
 
 					<div class="form-group">
-					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?//= $user->email; ?>" data-required>
+					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->attributes['email']; ?>" data-required>
 					</div>
 
 					<div class="form-group">

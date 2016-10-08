@@ -89,3 +89,15 @@ function userSave()
     // $user->user_id = Auth::id();
     $user->save();
 }
+
+function userUpdate($users)
+{
+    $user = new User();
+    $user->id = $users->attributes['id'];
+    $user->image_url = saveUploadedImage('image_url');
+    $user->username = Input::get('username');
+    $user->email = Input::get('email');
+    $user->password = Input::get('password');
+    // $user->user_id = Auth::id();
+    $user->save();
+}

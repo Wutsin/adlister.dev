@@ -33,7 +33,7 @@
                     <li><a href="/signup">SignUp</a></li>';
                 } else {
                     echo 
-                    '<li><a href="/account?userId= ' . Auth::id() . '">Account</a></li>
+                    '<li><a href="/account?userId=' . Auth::id() . '">Account</a></li>
                     <li><a href="/create">Post Ad</a></li>
                     <li><a href="/logout">Logout</a></li>';
                 }

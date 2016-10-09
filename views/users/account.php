@@ -30,14 +30,32 @@
                         <!-- profile info -->
                         <h4 class="section-title"><?= $user->email; ?></h4>
                         
-                        <!-- usermna -->
+                        <!-- usermname -->
                         <h1 class="section-title text-center"><?= $user->username; ?></h1>
 
                         <!-- profile info -->
                         <h4 class="section-title"><?= $user->email; ?></h4>
+                        <?php 
+                            // Checking url
+                            var_dump($_SERVER['REQUEST_URI']);
+                            // Checking query value after userId
+                            var_dump(ltrim($_SERVER['QUERY_STRING'], 'userId='));
+                            // Checking current logged in user's id
+                            var_dump(Auth::id());
 
-                        <!-- edit profile -->
-                        <a href="/editUser?userId=<?php echo($user->attributes['id']); ?>" class="btn btn-primary btn-md active" role="button">Update Profile</a>
+                            // Checks if URL id != Logged User id. ltrim takes away characters in second argument from first argument
+                            if (Auth::id() != ltrim($_SERVER['QUERY_STRING'], 'userId=')) {             
+// Variable $button holds heredoc
+$button = <<<'HTML'
+Put HTML here
+
+HTML;
+                                // echoes out heredoc
+                               echo $button;
+                            }
+                        ?>
+                        <!-- edit profile THIS IS ONE OF THE BUTTONS TO HIDE -->
+                         <a href="/editUser?userId=<?php echo($user->attributes['id']); ?>" class="btn btn-primary btn-md active" role="button" id="updateProfileBtn">Update Profile</a>
                     </div>
 
                     <!-- YOUR ADS -->

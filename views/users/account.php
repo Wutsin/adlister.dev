@@ -45,13 +45,8 @@
 
                             // Checks if URL id != Logged User id. ltrim takes away characters in second argument from first argument
                             if (Auth::id() != ltrim($_SERVER['QUERY_STRING'], 'userId=')) {             
-// Variable $button holds heredoc
-$button = <<<'HTML'
-Put HTML here
 
-HTML;
-                                // echoes out heredoc
-                               echo $button;
+
                             }
                         ?>
                         <!-- edit profile THIS IS ONE OF THE BUTTONS TO HIDE -->

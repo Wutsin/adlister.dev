@@ -109,27 +109,28 @@
                     </td>
                 </tr>
 
+                </tr>
+
                 <tr>
                     <td height="33">County</td>
-                    <td>
-                        <div id="county_drop_down"><select id="county" name="county" class="btn btn-default dropdown-toggle"><option value="">County...</option></select></div>
-
-                        <span id="loading_county_drop_down"><img src="style/loader.gif" width="16" height="16" align="absmiddle">&nbsp;Loading...</span>
-
-                        <div id="no_county_drop_down">This state has no counties.</div>
-                    </td>
+                    <td><div id="county_drop_down"><select id="county" name="county" class="btn btn-default dropdown-toggle"><option value="">County...</option></select></div>
+                    <span id="loading_county_drop_down"><img src="style/loader.gif" width="16" height="16" align="absmiddle">&nbsp;Loading...</span>
+                    <div id="no_county_drop_down">This state has no counties.</div></td>
                 </tr>
             </table>
 
             <!-- <button type="submit" class="btn btn-default">Update</button><br> -->
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-              <a href="" class="btn btn-primary loginButtons">Update</a>
+              <button type="submit" class="btn btn-primary loginButtons">Update</button>
             </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-              <a href="#" class="btn btn-danger loginButtons">Delete Ad</a>
-            </div>
-
         </form>
+
+        <form method="POST" class="form-group" name="deleteform">
+            <input type="hidden" name="delete">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+              <button type="submit" class="btn btn-danger loginButtons">Delete Ad</button>
+            </div>
+        </form>
+
     </div>
 </main>

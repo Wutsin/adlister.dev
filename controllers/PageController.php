@@ -45,11 +45,15 @@ function pageController()
             $main_view = '../views/ads/create.php';
             break;
         case '/edit' :
-            $data['items'] = Item::find($itemId);
-            if($_POST) {
-                itemsUpdate($data['items']);
-            }
             $main_view = '../views/ads/edit.php';
+            $data['items'] = Item::find($itemId);
+            if (isset($_POST['delete'])) {
+                Item::deleteItem($data['items']->id);
+                $main_view = '../views/ads/index.php';
+            } else if ($_POST) {
+                itemsUpdate($data['items']);
+                $main_view = '../views/ads/index.php';
+            }
             break;
         case '/ads' :
             if(isset($search)) {

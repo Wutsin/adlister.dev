@@ -91,7 +91,7 @@ class Model {
         $query = 'DELETE FROM ' . static::$table . ' WHERE id = ' . $id;
 
         $stmt = self::$dbc->prepare($query);
-        // $stmt->bindValue(':id', $this->attributes['id'], PDO::PARAM_INT);
+        $stmt->bindValue(':id', $this->attributes['id'], PDO::PARAM_INT);
         $stmt->execute();
     }
 

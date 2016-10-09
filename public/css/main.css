@@ -1,12 +1,8 @@
-/* COMMON BODY */
-
+/* ================== COMMON BODY ================== */
 body {
     background: url("/img/background.jpg");
-    /*background: contain;*/
-
-    /* fixes the image to the page so you can scroll over it */
-    /*background-attachment: fixed;*/
-    color: aliceblue;
+    background-attachment: fixed;
+    color:  aliceblue;
     text-align: center;
 }
 
@@ -17,15 +13,12 @@ h1, h2, h3 {
 p, h4 {
     color: white;
 }
-
-/* LANDING PAGE */
-.thumbnail {
-    background: rgba(240, 83, 0, 0.5);
-    color: white;
+/* removes text shadow */
+.clearfix > h3, span {
+    text-shadow: 0px 0px 0px #000000;
 }
 
-/*FOR NAVBAR*/
-
+/* ================== FOR NAVBAR ================== */
 .hamburgerButton {
     background-color: darkgray;
 }
@@ -35,17 +28,40 @@ p, h4 {
     padding-right: 2vw;
 }
 
+/* ================== LANDING PAGE ================== */
+.thumbnail {
+    background: rgba(240, 83, 0, 0.5);
+    color: white;
+}
 
-/*FOR FEATURED ITEMS ON HOME PAGE*/
 .featuredImg {
     width: 100%;
 }
 
-.featuredItemsHeader {
-
+/* ================== CREATE ITEM ================== */
+label {
+    font-size: 20px;
+    text-shadow: 3px 3px 1px #000000;
+    color: aliceblue;
 }
 
-/*FOR 404 IMAGE*/
+.table {
+    background-color: black;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================== 404 IMAGE ================== */
 .img-404 {
     padding-left: 0;
     padding-right: 0;
@@ -61,7 +77,7 @@ p, h4 {
     background-color: #151515;
 }
 
-/*IMAGE UPLOAD CSS*/
+/* ================== IMAGE UPLOAD ================== */
 .imageupload.imageupload-disabled {
     cursor: not-allowed;
     opacity: 0.60;
@@ -102,25 +118,17 @@ p, h4 {
 }
 
 .imageupload .file-tab .thumbnail {
-    margin-bottom: 10px;
-}
-
-.imageupload .url-tab {
-    display: none;
-}
-
-.imageupload .url-tab .thumbnail {
-    margin: 10px 0;
+    margin-bottom: 2px;
 }
 
 
-/* STATE/COUNTY UPLOADER */
+
+/* ================== STATE/COUNTY UPLOADER ================== */
 #county_drop_down, #no_county_drop_down, #loading_county_drop_down {
     display: none;
 }
 
-/* AD SHOW */
-
+/* ================== AD SHOW ================== */
 .custom-adSHOW-ad-img {
     width: 100%;
 }
@@ -137,8 +145,7 @@ p, h4 {
     text-align: center;
 }
 
-/* AD INDEX */
-
+/* ================== AD INDEX ================== */
 .custom-adINDEX-ad-img {
     width: 100%;
 }
@@ -165,7 +172,7 @@ p, h4 {
     margin-left: 6%;
 }
 
-/* AD EDIT */
+/* ================== AD EDIT ================== */
 .custom-adEDIT-ad-img {
     width: 100%;
 }
@@ -182,44 +189,22 @@ p, h4 {
 
 }
 
-
-/* AD CREATE */
-.custom-adCREATE-ad-img {
-    width: 100%;
-}
-.custom-adCREATE-ad-img a {
-    margin: 0;
-}
-.custom-adCREATE-h3 {
-    text-align: center;
-}
-.custom-adCREATE-anchor {
-    margin: 0;
-}
-.custom-adCREATE-ad-edit-main {
-
-}
-
-.createItemHeader {
-    text-align: center;
-}
-
- /* FOR LOGIN PAGE */
+ /* ================== FOR LOGIN PAGE ================== */
  .loginButtons {
      width: 100%;
  }
 
- /* FOR SIGNUP PAGE */
+ /* ================== FOR SIGNUP PAGE ================== */
  .signupButton {
      width: 100%;
  }
 
- /* FOR ADCREATE PAGE */
+ /* ================== FOR ADCREATE PAGE ================== */
  .adcreateButton {
      width: 100%;
  }
 
-  /* ACCOUNT PAGE */
+  /* ================== ACCOUNT PAGE ================== */
   #login > div > form > div:nth-child(1) > img {
      width: 25vw;
   }

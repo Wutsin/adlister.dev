@@ -1,24 +1,24 @@
-    <!-- adlister.dev/create -->
 <!--Page for creating new advertisement listings-->
-
-
 <main class="container-fluid custom-adCREATE-ad-edit-main imageupload">
-    <div class="row">
-        <h2 class="createItemHeader">Create Item</h2>
-        <!-- <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2"> -->
+    <div class="row"><br>
+        <h2 class="createItemHeader">Create Item</h2><br>
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
-        <!-- <div> -->
+
             <form class="form-group" name="form" method="POST" enctype="multipart/form-data">
 
+                <!-- HEADLINE -->
                 <label for="headline">Headline</label><br>
                 <input id="headline" type="text" name="headline" class="form-control" value=""><br>
 
+                <!-- PRICE -->
                 <label>Price</label><br>
                 <input id="price" type="text" name="price" class="form-control" value=""><br>
 
+                <!-- DESCRIPTION -->
                 <label>Description</label><br>
                 <textarea id="description" type="text" name="description" class="form-control" value="" rows="5"></textarea><br>
 
+                <!-- ITEM TYPE -->
                 <label>Choose Type of Item for Sale</label>
                 <div class="dropdown form-group">
                     <select class="btn btn-default dropdown-toggle" name="item_type">
@@ -28,7 +28,7 @@
                     </select>
                 </div>
 
-               <!-- Image uploader -->
+               <!-- IMAGE UPLOAD -->
                 <div class="imageupload panel panel-default">
                     <!-- top of image upload box -->
                     <div class="panel-heading clearfix">
@@ -48,8 +48,8 @@
                     </div>
                 </div>
 
-                <!-- States/Counties Selector -->
-                <table class="table table-bordered">
+                <!-- STATES/COUNTIES SELECTOR -->
+                <table class="table">
                     <tr>
                         <td>State</td>
                         <td><select id="state" name="state" class="btn btn-default dropdown-toggle">
@@ -119,8 +119,9 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                         <button type="submit" class="btn btn-success adcreateButton">Submit</button><br>
                     </div>
-                </div>
-            </form>
-        </div>
-    </div>
+
+                </div> <!-- closes row -->
+            </form> <!-- closes form -->
+        </div> <!-- closes form area -->
+    </div> <!-- closes row -->
 </main>

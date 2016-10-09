@@ -14,7 +14,7 @@ $query = "CREATE TABLE items (
     date_listed DATE NOT NULL,
     state VARCHAR(255) NOT NULL,
     county VARCHAR(255) NOT NULL,
-    image_url TEXT NOT NULL,
+    image_url VARCHAR(255) DEFAULT '/img/wutsinLogo.png',
     description TEXT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users (id)

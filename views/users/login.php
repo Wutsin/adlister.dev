@@ -23,8 +23,12 @@
                 <?php endif; ?>
 
 <!-- form for logging in -->
-                <?php var_dump(Auth::user()) ?>
-
+                
+                <?php
+                    if (Auth::check()) {
+                       echo '<h3>Login Successful</h3>'; 
+                    }
+                ?>
                 <form method="POST" action="" data-validation data-required-message="This field is required" class="text-center">
 
                     <div class="form-group">

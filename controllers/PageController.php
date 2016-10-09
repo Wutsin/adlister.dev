@@ -82,8 +82,6 @@ function pageController()
             break;
         case '/login' :
             if($_POST) {
-                var_dump($_POST['email']);
-                var_dump($_POST['password']);
                 Auth::attempt($_POST['email'], $_POST['password']);
             }
             $main_view = '../views/users/login.php';

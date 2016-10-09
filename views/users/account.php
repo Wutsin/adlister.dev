@@ -19,13 +19,17 @@
                     <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
                 <?php endif; ?>
 
-<!-- form for sign up -->
+
+                <!-- YOUR PROFILE INFO -->
                 <form method="POST" class="text-center">
                     <div class="container">
 
                         <!-- image -->
                         <img class="img-circle" src="<?= $user->image_url; ?>">
 
+                        <!-- profile info -->
+                        <h4 class="section-title"><?= $user->email; ?></h4>
+                        
                         <!-- usermna -->
                         <h1 class="section-title text-center"><?= $user->username; ?></h1>
 

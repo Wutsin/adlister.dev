@@ -1,25 +1,38 @@
 /* COMMON BODY */
 
 body {
-    background-color: lightsteelblue;
+    background: url("/img/background.jpg");
+    /*background: contain;*/
+
+    /* fixes the image to the page so you can scroll over it */
+    /*background-attachment: fixed;*/
+    color: aliceblue;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-shadow: 3px 3px 7px #000000;
+}
+
+p, h4 {
+    color: white;
+}
+
+/* LANDING PAGE */
+.thumbnail {
+    background: rgba(240, 83, 0, 0.5);
+    color: white;
 }
 
 /*FOR NAVBAR*/
-.navBarBackgroundColor {
-    background-color: #F1F1F1;
-}
 
 .hamburgerButton {
-    background-color: black;
-}
-
-.icon-bar {
-    background-color: white;
+    background-color: darkgray;
 }
 
 .wutsinLogo {
-    padding-left: .5vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 

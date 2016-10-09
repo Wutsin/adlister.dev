@@ -28,8 +28,8 @@
             <li><a href="/ads?search=">Items</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/signup">SignUp</a></li>
-            <li><a href="/account?userId=">Account</a></li>
-            <li><a href="/">Logout</a></li>
+            <li><a href="/account?userId=<?= Auth::id() ?>">Account</a></li>
+            <li><a href="/logout">Logout</a></li>
             <li><a href="/create">Post Ad</a></li>
         </ul>
   

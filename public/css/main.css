@@ -1,12 +1,8 @@
 /* COMMON BODY */
-
 body {
     background: url("/img/background.jpg");
-    /*background: contain;*/
-
-    /* fixes the image to the page so you can scroll over it */
-    /*background-attachment: fixed;*/
-    color: aliceblue;
+    background-attachment: fixed;
+    color:  aliceblue;
     text-align: center;
 }
 
@@ -17,15 +13,12 @@ h1, h2, h3 {
 p, h4 {
     color: white;
 }
-
-/* LANDING PAGE */
-.thumbnail {
-    background: rgba(240, 83, 0, 0.5);
-    color: white;
+/* removes text shadow */
+.clearfix > h3, span {
+    text-shadow: 0px 0px 0px #000000;
 }
 
 /*FOR NAVBAR*/
-
 .hamburgerButton {
     background-color: darkgray;
 }
@@ -35,17 +28,29 @@ p, h4 {
     padding-right: 2vw;
 }
 
+/* LANDING PAGE */
+.thumbnail {
+    background: rgba(240, 83, 0, 0.5);
+    color: white;
+}
 
-/*FOR FEATURED ITEMS ON HOME PAGE*/
 .featuredImg {
     width: 100%;
 }
 
-.featuredItemsHeader {
-
+/* CREATE ITEM */
+label {
+    font-size: 20px;
+    text-shadow: 3px 3px 1px #000000;
+    color: aliceblue;
 }
 
-/*FOR 404 IMAGE*/
+.table {
+    background-color: black;
+    border: 1px solid white;
+}
+
+/* FOR 404 IMAGE */
 .img-404 {
     padding-left: 0;
     padding-right: 0;
@@ -102,16 +107,9 @@ p, h4 {
 }
 
 .imageupload .file-tab .thumbnail {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
-.imageupload .url-tab {
-    display: none;
-}
-
-.imageupload .url-tab .thumbnail {
-    margin: 10px 0;
-}
 
 
 /* STATE/COUNTY UPLOADER */
@@ -120,7 +118,6 @@ p, h4 {
 }
 
 /* AD SHOW */
-
 .custom-adSHOW-ad-img {
     width: 100%;
 }
@@ -138,7 +135,6 @@ p, h4 {
 }
 
 /* AD INDEX */
-
 .custom-adINDEX-ad-img {
     width: 100%;
 }
@@ -180,28 +176,6 @@ p, h4 {
 }
 .custom-adEDIT-ad-edit-main {
 
-}
-
-
-/* AD CREATE */
-.custom-adCREATE-ad-img {
-    width: 100%;
-}
-.custom-adCREATE-ad-img a {
-    margin: 0;
-}
-.custom-adCREATE-h3 {
-    text-align: center;
-}
-.custom-adCREATE-anchor {
-    margin: 0;
-}
-.custom-adCREATE-ad-edit-main {
-
-}
-
-.createItemHeader {
-    text-align: center;
 }
 
  /* FOR LOGIN PAGE */

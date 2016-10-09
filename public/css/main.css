@@ -1,4 +1,4 @@
-/* COMMON BODY */
+/* ================== COMMON BODY ================== */
 body {
     background: url("/img/background.jpg");
     background-attachment: fixed;
@@ -18,7 +18,7 @@ p, h4 {
     text-shadow: 0px 0px 0px #000000;
 }
 
-/*FOR NAVBAR*/
+/* ================== FOR NAVBAR ================== */
 .hamburgerButton {
     background-color: darkgray;
 }
@@ -28,7 +28,7 @@ p, h4 {
     padding-right: 2vw;
 }
 
-/* LANDING PAGE */
+/* ================== LANDING PAGE ================== */
 .thumbnail {
     background: rgba(240, 83, 0, 0.5);
     color: white;
@@ -38,7 +38,7 @@ p, h4 {
     width: 100%;
 }
 
-/* CREATE ITEM */
+/* ================== CREATE ITEM ================== */
 label {
     font-size: 20px;
     text-shadow: 3px 3px 1px #000000;
@@ -50,7 +50,18 @@ label {
     border: 1px solid white;
 }
 
-/* FOR 404 IMAGE */
+
+
+
+
+
+
+
+
+
+
+
+/* ================== 404 IMAGE ================== */
 .img-404 {
     padding-left: 0;
     padding-right: 0;
@@ -66,7 +77,7 @@ label {
     background-color: #151515;
 }
 
-/*IMAGE UPLOAD CSS*/
+/* ================== IMAGE UPLOAD ================== */
 .imageupload.imageupload-disabled {
     cursor: not-allowed;
     opacity: 0.60;
@@ -112,12 +123,12 @@ label {
 
 
 
-/* STATE/COUNTY UPLOADER */
+/* ================== STATE/COUNTY UPLOADER ================== */
 #county_drop_down, #no_county_drop_down, #loading_county_drop_down {
     display: none;
 }
 
-/* AD SHOW */
+/* ================== AD SHOW ================== */
 .custom-adSHOW-ad-img {
     width: 100%;
 }
@@ -134,7 +145,7 @@ label {
     text-align: center;
 }
 
-/* AD INDEX */
+/* ================== AD INDEX ================== */
 .custom-adINDEX-ad-img {
     width: 100%;
 }
@@ -161,7 +172,7 @@ label {
     margin-left: 6%;
 }
 
-/* AD EDIT */
+/* ================== AD EDIT ================== */
 .custom-adEDIT-ad-img {
     width: 100%;
 }
@@ -178,22 +189,22 @@ label {
 
 }
 
- /* FOR LOGIN PAGE */
+ /* ================== FOR LOGIN PAGE ================== */
  .loginButtons {
      width: 100%;
  }
 
- /* FOR SIGNUP PAGE */
+ /* ================== FOR SIGNUP PAGE ================== */
  .signupButton {
      width: 100%;
  }
 
- /* FOR ADCREATE PAGE */
+ /* ================== FOR ADCREATE PAGE ================== */
  .adcreateButton {
      width: 100%;
  }
 
-  /* ACCOUNT PAGE */
+  /* ================== ACCOUNT PAGE ================== */
   #login > div > form > div:nth-child(1) > img {
      width: 25vw;
   }

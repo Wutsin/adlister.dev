@@ -42,8 +42,13 @@ class Item extends Model {
           return $instance;
     }
 
+    public static function deleteItem($id) {
+        $query = 'DELETE FROM items WHERE id = :id';
+        $stmt = self::$dbc->prepare($query);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+    }    
+
 }
 
-//display all the add
-//search for specific by id
-//be able to search through all the collums for keyword
+

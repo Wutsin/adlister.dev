@@ -14,22 +14,20 @@ class Auth
 		if(($username == '' || $username == null) || ($password == '' || $password == null))
 		{
 
-			$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect 1';
+			$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect';
 			return false;
 		}
 
 		// gets instance of user model by searching with username or email($username)
 		$user = User::findByUsernameOrEmail($username);
-		var_dump($user);
 		// makes sure the instance returned is not empty
 		if ($user == null)
 		{
 
-			$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect 2';
+			$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect';
 			return false;
 		}
 
-		var_dump($password);
 		// checks password submitted against hashed password
 		if (password_verify($password, $user->password))
 		{
@@ -41,7 +39,7 @@ class Auth
 			return true;
 		}
 
-		$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect 3';
+		$_SESSION['ERROR_MESSAGE'] = 'Login information was incorrect';
 		return false;
 	}
 

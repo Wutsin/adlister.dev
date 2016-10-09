@@ -26,11 +26,18 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="/ads?search=">Items</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup">SignUp</a></li>
-            <li><a href="/account?userId=<?= Auth::id() ?>">Account</a></li>
-            <li><a href="/logout">Logout</a></li>
-            <li><a href="/create">Post Ad</a></li>
+            <?php 
+                if (!Auth::check()) {
+                    echo 
+                    '<li><a href="/login">Login</a></li>
+                    <li><a href="/signup">SignUp</a></li>';
+                } else {
+                    echo 
+                    '<li><a href="/account?userId= ' . Auth::id() . '">Account</a></li>
+                    <li><a href="/create">Post Ad</a></li>
+                    <li><a href="/logout">Logout</a></li>';
+                }
+            ?>
         </ul>
   
         <!-- navbar-left will move the search to the left -->

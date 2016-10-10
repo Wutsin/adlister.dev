@@ -2,7 +2,6 @@
 
 require_once __DIR__ . '/../../models/Item.php';
 
-
 // bike1
 $item = new Item;
 $item->user_id = 1;

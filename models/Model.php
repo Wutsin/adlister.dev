@@ -15,7 +15,6 @@ class Model {
      */
     public function __construct()
     {
-
         self::dbConnect();
     }
 
@@ -28,7 +27,6 @@ class Model {
         // Return the value from attributes with a matching $name, if it exists
         if ( array_key_exists( $name, $this->attributes ) )
         {
-
             return $this->attributes[ $name ];
         }
 
@@ -41,7 +39,6 @@ class Model {
      */
     public function __set($name, $value)
     {
-
         // Store name/value pair in attributes array
         $this->attributes[ $name ] = $value;
     }
@@ -55,7 +52,6 @@ class Model {
 
         if ( ! self::$dbc )
         {
-
             //Connect to database
             require_once __DIR__ . '/../database/db_connect.php';
 
@@ -69,17 +65,14 @@ class Model {
      */
     public function save()
     {
-
         //Ensure there are attributes before attempting to save
         //Perform the proper action - if the `id` is set, this is an update, if not it is a insert
         if ( ! empty( $this->attributes ) && isset( $this->attributes['id'] ) )
         {
-
             $this->update( $this->attributes['id'] );
         }
         else
         {
-
             $this->insert();
         }
     }
@@ -87,7 +80,6 @@ class Model {
     // deletes object from db
     public function delete($id)
     {
-
         $query = 'DELETE FROM ' . static::$table . ' WHERE id = ' . $id;
 
         $stmt = self::$dbc->prepare($query);
@@ -98,7 +90,6 @@ class Model {
     // creates new entry in db
     protected function insert()
     {
-
         //After insert, add the id back to the attributes array so the object can properly reflect the id
         //Iterate through all the attributes to build the prepared query
         //Use prepared statements to ensure data security
@@ -107,16 +98,13 @@ class Model {
 
         foreach ($this->attributes as $column => $value)
         {
-
             if ( $columns == '' && $value_placeholders == '')
             {
-
                 $columns .= $column;
                 $value_placeholders .= ':' . $column;
             }
             else
             {
-
                 $columns .= ', ' . $column;
                 $value_placeholders .= ', :' . $column;
             }
@@ -138,7 +126,6 @@ class Model {
     // updates existing entry in db
     protected function update($id)
     {
-
         //Ensure that update is properly handled with the id key
         //You will need to iterate through all the attributes to build the prepared query
         //Use prepared statements to ensure data security
@@ -147,22 +134,18 @@ class Model {
 
         foreach ($this->attributes as $key => $value)
         {
-
             if ( $key == 'id')
             {
-
                 continue;
             }
 
             if ( $first_value )
             {
-
                 $first_value = false;
                 $query .= $key . ' = :' . $key;
             }
             else
             {
-
                 $query .= ', ' . $key . ' = :' . $key;
             }
         }
@@ -173,7 +156,6 @@ class Model {
 
         foreach ($this->attributes as $key => $value)
         {
-
             $stmt->bindValue(':' . $key, $value, PDO::PARAM_STR);
         }
 
@@ -186,7 +168,6 @@ class Model {
      */
     public static function find($id)
     {
-
         // Get connection to the database
         self::dbConnect();
 
@@ -206,7 +187,6 @@ class Model {
 
         if ( $result )
         {
-
             $instance = new static;
             $instance->attributes = $result;
         }
@@ -220,7 +200,6 @@ class Model {
      */
     public static function all()
     {
-
         self::dbConnect();
 
         //Learning from the previous method, return all the matching records
@@ -265,14 +244,11 @@ class Model {
 
         if ( $results )
         {
-
             $instance = new static;
             $instance->attributes = $results;
         }
-
         return $instance;
     }
-
 }
 
 ?>

@@ -1,3 +1,7 @@
+
+<!-- do we need the code that has been commented out?? -->
+
+
 <?php
 
 require_once __DIR__ . '/Model.php';
@@ -11,10 +15,10 @@ class Item extends Model {
         return parent::findyby('user_Id', $id);
     }
 
-    public function getItemType ()
-    {
+    // public function getItemType ()
+    // {
 
-    }
+    // }
 
     public static function searchItems($searchTerm)
     {

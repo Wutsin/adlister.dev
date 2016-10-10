@@ -19,7 +19,6 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2 class="itemsForSaleHeader">Items for Sale</h2>
             </div>
-    
         </div> <!-- end row -->
 
         <div class="row">
@@ -31,7 +30,7 @@
                 <?php foreach($items->attributes as $item) : ?>
                     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                         <div class="thumbnail customThumbNail">
-                            <a href="/show?itemId=<?= $item['id']; ?>" class="thumbnail custom-adINDEX-anchor">
+                            <a href="/show?itemId=<?= $item['id']; ?>">
                                 <div class="caption customCaption">
                                     <!-- item image -->
                                     <img src=<?= $item['image_url']; ?> alt="Image File Path Bad" class="custom-adINDEX-ad-img">

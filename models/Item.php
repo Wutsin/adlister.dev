@@ -1,7 +1,3 @@
-
-<!-- do we need the code that has been commented out?? -->
-
-
 <?php
 
 require_once __DIR__ . '/Model.php';
@@ -14,11 +10,6 @@ class Item extends Model {
     {
         return parent::findyby('user_Id', $id);
     }
-
-    // public function getItemType ()
-    // {
-
-    // }
 
     public static function searchItems($searchTerm)
     {
@@ -38,7 +29,6 @@ class Item extends Model {
 
           if ( $results )
           {
-
               $instance = new static;
               $instance->attributes = $results;
           }
@@ -52,7 +42,6 @@ class Item extends Model {
         $stmt->bindValue(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
     }    
-
 }
 
 

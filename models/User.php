@@ -9,19 +9,16 @@ class User extends Model {
     // checks if the attribute being saved is password and hashes it if so
     public function __set($name, $value)
     {
-
     	if ($name == 'password')
     	{
     		$value = password_hash($value, PASSWORD_DEFAULT);
     	}
-
         parent::__set($name, $value);
     }
 
     // finds and returns instance of user based on email or username
     public static function findByUsernameOrEmail($username_or_email)
     {
-
     	self::dbConnect();
 
     	$query = 'SELECT * FROM ' . self::$table . ' WHERE username = :username OR email = :email';
@@ -40,15 +37,11 @@ class User extends Model {
 
         if ( $results )
         {
-
             $instance = new static;
             $instance->attributes = $results;
         }
-
         return $instance;
     }
-
-
 }
 
 ?>

@@ -1,3 +1,6 @@
+
+<!-- do we need the code that has been commented out?? -->
+
 <?php
 // List of helper functions used throughout the application.
 // Primarily used within the PageController function.

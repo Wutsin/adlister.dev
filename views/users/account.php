@@ -1,8 +1,3 @@
-<!-- 
-getting 2 errors at the bottom
-    ( ! ) Notice: Trying to get property of non-object in /vagrant/sites/adlister.dev/views/users/account.php on line 65
- -->
-
 <!--Page for user account home-->
 <div class="container">
     <section id="login">

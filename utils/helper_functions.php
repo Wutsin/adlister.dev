@@ -1,6 +1,3 @@
-
-<!-- do we need the code that has been commented out?? -->
-
 <?php
 // List of helper functions used throughout the application.
 // Primarily used within the PageController function.
@@ -85,7 +82,6 @@ function userSave()
     $user->email = Input::get('email');
     $user->password = Input::get('password');
     $user->date_joined = date('Y-m-d');
-    // $user->user_id = Auth::id();
     $user->save();
 }
 
@@ -97,6 +93,5 @@ function userUpdate($users)
     $user->username = Input::get('username');
     $user->email = Input::get('email');
     $user->password = Input::get('password');
-    // $user->user_id = Auth::id();
     $user->save();
 }

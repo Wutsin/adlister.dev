@@ -34,7 +34,7 @@ button {
 
 /* ================== LANDING PAGE ================== */
 .thumbnail {
-    background: rgba(240, 83, 0, 0.5);
+    background: rgba(240, 83, 0, 0.3);
     color: white;
 }
 
@@ -52,33 +52,6 @@ label {
 .table {
     background-color: black;
     border: 1px solid white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================== 404 IMAGE ================== */
-.img-404 {
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: -6vh;
-}
-
-.deathStarImg {
-    width: 100%;
-    height: auto;
-}
-
-.black-background {
-    background-color: #151515;
 }
 
 /* ================== IMAGE UPLOAD ================== */
@@ -125,11 +98,45 @@ label {
     margin-bottom: 2px;
 }
 
-
-
 /* ================== STATE/COUNTY UPLOADER ================== */
 #county_drop_down, #no_county_drop_down, #loading_county_drop_down {
     display: none;
+}
+
+/* ================== ACCOUNT PAGE ================== */
+#login > div > form > div:nth-child(1) > img {
+    width: 25vw;
+}
+
+.thumbnail > img {
+    height: 50vh;
+}
+
+.list-group-item {
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* ================== 404 IMAGE ================== */
+.img-404 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: -6vh;
+}
+
+.deathStarImg {
+    width: 100%;
+    height: auto;
+}
+
+.black-background {
+    background-color: #151515;
 }
 
 /* ================== AD SHOW ================== */
@@ -209,11 +216,4 @@ label {
      width: 100%;
  }
 
-  /* ================== ACCOUNT PAGE ================== */
-  #login > div > form > div:nth-child(1) > img {
-     width: 25vw;
-  }
 
- .thumbnail > img {
-     height: 50vh;
- }

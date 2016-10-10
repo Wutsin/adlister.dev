@@ -61,31 +61,34 @@
                         <?php foreach ($items->attributes as $item) : ?>
                             <div class="row">
                                 <div class="thumbnail">
-                                <!-- image -->
-                                    <!-- <div> -->
-                                        <img src="<?= $item['image_url']; ?>" alt="Image File Path Bad">
-                                    <!-- </div> -->
+                                    <!-- image -->
+                                    <img src="<?= $item['image_url']; ?>" alt="Image File Path Bad">
 
-                                <!-- item info -->
+                                    <!-- item info -->
                                     <div class="panel-body">
                                         <ul class="list-group">
+                                            <!-- item info -->
                                             <li class="list-group-item active">Item Information</li>
+                                            <!-- item headline -->
                                             <li class="list-group-item"><b><?= $item['headline']; ?></b></li>
+                                            <!-- item price -->
                                             <li class="list-group-item"><b>Price: </b><?= '$' . $item['price']; ?></li>
+                                            <!-- item location -->
                                             <li class="list-group-item">
                                                 <b>State: </b> <?= $item['state']; ?><br>
                                                 <b>County:</b> <?= $item['county']; ?></li>
+                                            <!-- item description -->
                                             <li class="list-group-item"><b>Description: </b><?= $item['description']; ?></li>
                                         </ul>
 
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                                             <a href="/edit?itemId=<?php echo($item['id']); ?>" class="btn btn-primary loginButtons">Edit Ad</a>
                                         </div>
-                                    </div>
+                                    </div> <!-- closes item info -->
 
                             </div> <!-- closes the row class -->
                         <?php endforeach; ?>
-                    </div>
+                    </div> <!-- closes container -->
                 </form>
         </div> <!-- close row -->
     </section> <!-- close login -->

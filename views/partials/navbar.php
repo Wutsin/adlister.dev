@@ -13,7 +13,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        
+
         </button>
 
         <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
@@ -24,28 +24,28 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
         <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="/ads?search=">Items</a></li>
-            <?php 
+            <?php
                 if (!Auth::check()) {
-                    echo 
+                    echo
                     '<li><a href="/login">Login</a></li>
                     <li><a href="/signup">SignUp</a></li>';
                 } else {
-                    echo 
+                    echo
                     '<li><a href="/account?userId=' . Auth::id() . '">Account</a></li>
                     <li><a href="/create">Post Ad</a></li>
                     <li><a href="/logout">Logout</a></li>';
                 }
             ?>
         </ul>
-  
+
         <!-- navbar-left will move the search to the left -->
         <form method="GET" action="/ads" id="searchform" class="navbar-form navbar-right" role="search">
-            
+
             <div class="input-group form-group-md">
                 <input type="text" name="search" class="form-control" placeholder="Search">
-                
+
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-default">Submit</button>
                 </span>
@@ -53,4 +53,3 @@
         </form> <!-- close form -->
     </div><!-- /.navbar-collapse -->
 </nav> <!-- close navbar -->
-

@@ -55,8 +55,6 @@ function itemsSave()
     $item->county = Input::get('county');
     $item->image_url = saveUploadedImage('image_url');
     $item->description = Input::get('description');
-    // $item->user_id = Auth::id();
-    $item->user_id = 1;
     $item->save();
 }
 
@@ -72,9 +70,7 @@ function itemsUpdate($items)
     $item->county = Input::get('county');
     $item->image_url = saveUploadedImage('image_url');
     $item->description = Input::get('description');
-    // $item->user_id = Auth::id();
     $data['itemUpdateMessage'] = "Item was updated";
-    $item->user_id = 1;
     $item->save();
 }
 
@@ -101,4 +97,3 @@ function userUpdate($users)
     // $user->user_id = Auth::id();
     $user->save();
 }
-

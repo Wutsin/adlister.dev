@@ -49,9 +49,11 @@ function pageController()
             $data['items'] = Item::find($itemId);
             if (isset($_POST['delete'])) {
                 Item::deleteItem($data['items']->id);
+                header("Location: http://adlister.dev/ads?search=");
                 $main_view = '../views/ads/index.php';
             } else if ($_POST) {
                 itemsUpdate($data['items']);
+                header("Location: http://adlister.dev/ads?search=");
                 $main_view = '../views/ads/index.php';
             }
             break;

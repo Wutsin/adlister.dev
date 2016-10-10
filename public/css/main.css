@@ -116,6 +116,12 @@ label {
     color: black;
 }
 
+/* ================== FOR SIGNUP PAGE ================== */
+ .signupButton {
+     width: 100%;
+     margin-bottom: 10%;
+ }
+
 
 
 
@@ -204,11 +210,6 @@ label {
  .loginButtons {
      width: 100%;
      margin-bottom: 10%;
- }
-
- /* ================== FOR SIGNUP PAGE ================== */
- .signupButton {
-     width: 100%;
  }
 
  /* ================== FOR ADCREATE PAGE ================== */

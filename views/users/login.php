@@ -22,27 +22,29 @@
                     <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
                 <?php endif; ?>
 
-<!-- form for logging in -->
-                
-                <?php
-                    if (Auth::check()) {
-                       echo '<h3>Login Successful</h3>'; 
-                    }
-                ?>
+                <!-- LOGIN FORM -->
                 <form method="POST" action="" data-validation data-required-message="This field is required" class="text-center">
-
+                    <!-- checks to see if you are logged in -->
+                    <?php
+                        if (Auth::check()) {
+                           echo '<h3>Login Successful</h3>'; 
+                        }
+                    ?>
+                    <!-- email -->
                     <div class="form-group">
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-required>
                     </div>
-
+                    <!-- password -->
                     <div class="form-group">
                         <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
                     </div>
 
                     <div class="row">
+                        <!-- login -->
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
                             <button type="submit" class="btn btn-primary loginButtons">Login</button>
                         </div>
+                        <!-- signup -->
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
                             <a href="/signup" class="btn btn-success loginButtons">Go To Signup</a>
                         </div>

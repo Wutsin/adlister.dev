@@ -1,3 +1,9 @@
+<!-- 
+showing lots of errors
+    - ( ! ) Notice: Undefined variable: itemId in /vagrant/sites/adlister.dev/controllers/PageController.php on line 70
+ -->
+
+
 <!--Page for single advertisement -->
 <main class="container">
     <h2 class="custom-adSHOW-ad-show-header">Item Description</h2>

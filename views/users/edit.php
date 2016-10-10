@@ -2,7 +2,7 @@
     <section id="login">
         <div class="row">
 
-            <h1 class="section-title text-center">Edit Account</h1>
+            <h1 class="section-title text-center">Edit Account</h1><br>
 
             <div class="col-md-6 col-md-offset-3">
 
@@ -22,10 +22,10 @@
                     <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
                 <?php endif; ?>
 
-<!-- form for profile update -->
+				<!-- PROFILE UPDATE FORM -->
 				<form method="POST" action="" data-validation data-required-message="This field is required" class="text-center" enctype="multipart/form-data">
 				
-					<!-- Image uploader -->
+					<!-- IMAGE UPLOADER -->
 	            	<div class="imageupload panel panel-default">
 		                <!-- top of image upload box -->
 		                <div class="panel-heading clearfix">
@@ -43,24 +43,29 @@
 		                </div>
 		            </div>
 
-					<!-- form update info -->
+					<!-- UPDATE INFO -->
+					<!-- username -->
 					<div class="form-group">
 					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->attributes['username']; ?>" data-required>
 					</div>
 
+					<!-- email -->
 					<div class="form-group">
 					    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="<?= $user->attributes['email']; ?>" data-required>
 					</div>
-
+					
+					<!-- password -->
 					<div class="form-group">
 					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
 					</div>
 
+					<!-- password confermation -->
 					<div class="form-group">
 					    <input type="password" class="form-control" id="password" name="password" placeholder="Confirm Password" data-required>
 					</div>
-
-					<button type="submit" class="btn btn-primary">Update Account</button>
+					
+					<!-- update accoutn -->
+					<button type="submit" class="btn btn-primary loginButtons">Update Account</button>
 
 				</form> <!-- closes form -->
 			</div>

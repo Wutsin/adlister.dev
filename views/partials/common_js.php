@@ -15,5 +15,5 @@
 <!-- For image uploader *** MUST STAY UNDER image-load AND drop_down.js -->
 <script src="/js/ad-create.js"></script>
 
-
-
+<!-- For use verification to dynamically show and hide buttons for account page -->
+<script src="/js/userVerification.js"></script>

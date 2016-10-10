@@ -1,6 +1,4 @@
-<!-- adlister.dev/show -->
 <!--Page for single advertisement -->
-
 <main class="container">
     <h2 class="custom-adSHOW-ad-show-header">Item Description</h2>
     <div class="container">

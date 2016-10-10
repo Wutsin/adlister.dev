@@ -32,9 +32,6 @@ getting 2 errors at the bottom
                         <!-- image -->
                         <img class="img-circle" src="<?= $user->image_url; ?>">
 
-                        <!-- profile info -->
-                        <h4 class="section-title"><?= $user->email; ?></h4>
-
                         <!-- usermname -->
                         <h1 class="section-title text-center"><?= $user->username; ?></h1>
 
@@ -64,7 +61,7 @@ getting 2 errors at the bottom
 
                     <!-- YOUR ADS -->
                     <div class="container">
-                        <h1>Your Ads</h1>
+                        <h1>Posted Ads</h1>
 
                         <!-- ads info -->
                         <?php foreach ($items->attributes as $item) : ?>

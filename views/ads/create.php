@@ -11,7 +11,7 @@
                 <input id="headline" type="text" name="headline" class="form-control" value=""><br>
 
                 <!-- PRICE -->
-                <label>Price</label><br>
+                <label>Price <em>(must be entered without "$")</em></label><br>
                 <input id="price" type="text" name="price" class="form-control" value=""><br>
 
                 <!-- DESCRIPTION -->

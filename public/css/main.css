@@ -18,6 +18,10 @@ p, h4 {
     text-shadow: 0px 0px 0px #000000;
 }
 
+button {
+    margin-bottom: 5%;
+}
+
 /* ================== FOR NAVBAR ================== */
 .hamburgerButton {
     background-color: darkgray;
@@ -192,6 +196,7 @@ label {
  /* ================== FOR LOGIN PAGE ================== */
  .loginButtons {
      width: 100%;
+     margin-bottom: 10%;
  }
 
  /* ================== FOR SIGNUP PAGE ================== */

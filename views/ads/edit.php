@@ -1,24 +1,25 @@
-<!-- adlister.dev/edit -->
 <!--Page that includes the form to edit an existing ad-->
-
-
 <main class="container-fluid custom-adEDIT-ad-edit-main imageupload">
-    <h2>Update Item</h2>
+    <h2>Update Item</h2><br>
     <?= $itemUpdateMessage; ?>
 
     <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
 
         <form method="POST" class="form-group" name="form" enctype="multipart/form-data">
 
+            <!-- HEADLINE -->
             <label for="name">Headline</label><br>
             <input id="name" type="text" name="headline" class="form-control" value="<?= $items->attributes['headline']; ?>"><br>
-
+    
+            <!-- PRICE -->
             <label>Price</label><br>
             <input id="price" type="text" name="price" class="form-control" value="<?= '$' . $items->attributes['price']; ?>"><br>
 
+            <!-- DESCRIPTION -->
             <label>Description</label><br>
             <textarea id="description" type="text" name="description" class="form-control" rows="5"><?= $items->attributes['description']; ?></textarea><br>
 
+            <!-- ITEM TYPE -->
             <label>Choose Type of Item for Sale</label>
             <div class="dropdown form-group">
               <div class="dropdown form-group">
@@ -30,7 +31,7 @@
                 </div>
             </div>
 
-            <!-- Image uploader -->
+            <!-- IMAGE UPLOADER -->
             <div class="imageupload panel panel-default">
                 <!-- top of image upload box -->
                 <div class="panel-heading clearfix">
@@ -48,8 +49,8 @@
                 </div>
             </div>
 
-            <!-- States/Counties Selector -->
-            <table class="table table-bordered">
+            <!-- STATE/COUNTIES SELECTOR -->
+            <table class="table">
                 <tr>
                     <td>State</td>
                     <td>
@@ -119,9 +120,8 @@
                 </tr>
             </table>
 
-            <!-- <button type="submit" class="btn btn-default">Update</button><br> -->
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-              <button type="submit" class="btn btn-primary loginButtons">Update</button>
+                <button type="submit" class="btn btn-primary loginButtons">Update</button>
             </div>
         </form>
 

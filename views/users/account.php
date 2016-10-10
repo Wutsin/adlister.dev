@@ -29,22 +29,26 @@
 
                         <!-- profile info -->
                         <h4 class="section-title"><?= $user->email; ?></h4>
-                        
+
                         <!-- usermname -->
                         <h1 class="section-title text-center"><?= $user->username; ?></h1>
 
                         <!-- profile info -->
                         <h4 class="section-title"><?= $user->email; ?></h4>
-                        <?php 
+                        <?php
                             // Checking url
-                            var_dump($_SERVER['REQUEST_URI']);
+                            // var_dump($_SERVER['REQUEST_URI']);
                             // Checking query value after userId
-                            var_dump(ltrim($_SERVER['QUERY_STRING'], 'userId='));
+                            // var_dump(ltrim($_SERVER['QUERY_STRING'], 'userId='));
                             // Checking current logged in user's id
-                            var_dump(Auth::id());
+                            // var_dump(Auth::id());
+                            $loggedUser = Auth::id();
+                            echo "<script>";
+                            echo ('var userId = ' . json_encode($loggedUser) . ';');
+                            echo "</script>";
 
                             // Checks if URL id != Logged User id. ltrim takes away characters in second argument from first argument
-                            if (Auth::id() != ltrim($_SERVER['QUERY_STRING'], 'userId=')) {             
+                            if (Auth::id() != ltrim($_SERVER['QUERY_STRING'], 'userId=')) {
 
 
                             }
@@ -82,7 +86,7 @@
                                         </ul>
 
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                                            <a href="/edit?itemId=<?php echo($item['id']); ?>" class="btn btn-primary loginButtons">Edit Ad</a>
+                                            <a href="/edit?itemId=<?php echo($item['id']); ?>" class="btn btn-primary loginButtons editAdButton" id="">Edit Ad</a>
                                         </div>
                                     </div> <!-- closes item info -->
 

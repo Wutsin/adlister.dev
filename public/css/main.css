@@ -4,6 +4,7 @@ body {
     background-attachment: fixed;
     color:  aliceblue;
     text-align: center;
+    background-color: black;
 }
 
 h1, h2, h3 {
@@ -209,5 +210,3 @@ label {
  .adcreateButton {
      width: 100%;
  }
-
-

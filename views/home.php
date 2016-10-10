@@ -9,7 +9,7 @@
 
     <section id="features">
         <div class="row"><br><br><br>
-            <h3 class="section-title featuredItemsHeader">Categories</h3>
+            <h3 class="section-title featuredItemsHeader">Categories For Sale</h3>
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <!-- skateboard -->

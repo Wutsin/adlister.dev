@@ -12,8 +12,8 @@
             <input id="name" type="text" name="headline" class="form-control" value="<?= $items->attributes['headline']; ?>"><br>
     
             <!-- PRICE -->
-            <label>Price</label><br>
-            <input id="price" type="text" name="price" class="form-control" value="<?= '$' . $items->attributes['price']; ?>"><br>
+            <label>Price <em>(must be entered without "$")</label><br>
+            <input id="price" type="text" name="price" class="form-control" value="<?= $items->attributes['price']; ?>"><br>
 
             <!-- DESCRIPTION -->
             <label>Description</label><br>

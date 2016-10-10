@@ -68,7 +68,7 @@ function itemsUpdate($items)
     $item->id = $items->attributes['id'];
     $item->item_type = Input::get('item_type');
     $item->headline = Input::get('headline');
-    $item->price = substr(Input::get('price'), 1);
+    $item->price = Input::get('price');
     $item->state = Input::get('state');
     $item->county = Input::get('county');
     $item->image_url = saveUploadedImage('image_url');

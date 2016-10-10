@@ -22,10 +22,10 @@
                     <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
                 <?php endif; ?>
 
-                <!-- form for sign up -->
+                <!-- FORM FOR SIGN UP -->
                 <form method="POST" action="" data-validation data-required-message="This field is required" class="text-center" enctype="multipart/form-data">
 
-                    <!-- Image uploader -->
+                    <!-- IMAGE UPLOADER -->
                     <div class="imageupload panel panel-default">
                         <!-- top of image upload box -->
                         <div class="panel-heading clearfix">
@@ -45,24 +45,24 @@
                         </div>
                     </div>
 
-
-                    <!-- form info -->
+                    <!-- FORM INFO -->
+                    <!-- username -->
                     <div class="form-group">
                         <input type="text" class="form-control" id="username" name="username" placeholder="Username" data-required>
                     </div>
-
+                    <!-- email -->
                     <div class="form-group">
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-required>
                     </div>
-
+                    <!-- password -->
                     <div class="form-group">
                         <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
                     </div>
-
+                    <!-- confirm password -->
                     <div class="form-group">
                         <input type="password" class="form-control" id="confirm_password" name="confirm-password" placeholder="Confirm Password" data-required>
                     </div>
-
+                    <!-- signup button -->
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                             <button type="submit" class="btn btn-primary signupButton">Signup</button>

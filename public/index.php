@@ -15,6 +15,7 @@ require_once __DIR__ . '/../bootstrap.php';
     <?php require $main_view; ?>
 
     <?php require '../views/partials/common_js.php'; ?>
+    <div class="copyright">Copyright &copy Mittsy Tidwell, Wyatt Barnes, Justin Reich 2016</div>
     
 </body>
 </html>
